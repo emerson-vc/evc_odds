@@ -1,0 +1,51 @@
+# Per-source settings. See docs/source_status.md for how each source was verified.
+#
+# candidate_eligible: can this source be flagged as a +EV opportunity for the user (PA resident)?
+#   false = consensus-only (user can't legally bet there, or price isn't actionable).
+
+sources:
+  fanduel:
+    label: FanDuel
+    enabled: true
+    candidate_eligible: true
+    weight: 1.0
+    region: pa                 # FanDuel serves per-state hosts; user is in PA.
+    # Conservative "testing" rates. For scale: one open FanDuel browser tab makes ~2 requests every 5s
+    # (~0.4/s). These settings average ~1 request every 7-8s (~0.13/s), about a third of one open tab,
+    # with no bursts. Tighten later only if freshness actually matters for a use case.
+    poll_seconds: 60           # Game-line price refresh (~2 requests).
+    props_poll_seconds: 120    # Player-prop price refresh (~9 requests, spaced out).
+    discover_seconds: 900      # Re-list games and re-read each game page (~29 requests, spaced out) every 15 min.
+    request_spacing_seconds: 2 # Minimum gap between consecutive requests, so a refresh never bursts.
+    event_page_tab: "same-game-parlay-"   # Observed tab value; returns game lines + player O/U props + anytime TD.
+    timeout_seconds: 15
+    # Observed in a browser capture on 2026-10-01. UNDOCUMENTED: may change without notice.
+    # {region} is substituted. App key comes from .env (FANDUEL_APP_KEY).
+    endpoints:
+      event_search: "https://scan.{region}.sportsbook.fanduel.com/api/sports/navigation/facet/v1.0/search"
+      event_page: "https://api.sportsbook.fanduel.com/sbapi/event-page"
+      market_prices: "https://smp.{region}.sportsbook.fanduel.com/api/sports/fixedodds/readonly/v1/getMarketPrices"
+    nfl_competition_id: 12282733   # FanDuel's id for "NFL" (observed).
+
+  # Not implemented yet. Listed so weights / eligibility live in one place.
+  draftkings: {label: DraftKings, enabled: false, candidate_eligible: true,  weight: 1.0}
+  betmgm:     {label: BetMGM, enabled: false, candidate_eligible: true,  weight: 1.0}
+  fanatics:   {label: Fanatics, enabled: false, candidate_eligible: true,  weight: 1.0}
+  betrivers:  {label: BetRivers, enabled: false, candidate_eligible: true,  weight: 1.0}
+  pinnacle:   {label: Pinnacle, enabled: false, candidate_eligible: false, weight: 1.0}  # Doesn't serve US; API partner-only.
+  circa:      {label: Circa, enabled: false, candidate_eligible: false, weight: 1.0}  # Not licensed in PA.
+  polymarket: {label: Polymarket, enabled: false, candidate_eligible: true,  weight: 1.0}  # Polymarket US only; intl = consensus-only.
+  kalshi:
+    label: Kalshi
+    enabled: true
+    candidate_eligible: true
+    weight: 1.0
+    # Official public API, no key needed for market data (docs.kalshi.com). One request per series per cycle.
+    base_url: "https://external-api.kalshi.com/trade-api/v2"
+    poll_seconds: 60             # 9 series -> ~9 requests per minute
+    request_spacing_seconds: 2
+    timeout_seconds: 20
+    taker_fee_coefficient: 0.07  # fee = 0.07 * P * (1-P) per contract [search; TODO verify on kalshi.com/fee-schedule]
+    min_ask_contracts: 1         # ignore asks with less depth than this
+  novig:      {label: Novig, enabled: false, candidate_eligible: true,  weight: 1.0}
+  prophetx:   {label: ProphetX, enabled: false, candidate_eligible: true,  weight: 1.0}

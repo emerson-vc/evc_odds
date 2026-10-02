@@ -1,0 +1,1887 @@
+{
+ "attachments": {
+  "eventTypes": {
+   "6423": {
+    "eventTypeId": 6423,
+    "name": "American Football"
+   }
+  },
+  "competitions": {
+   "12282733": {
+    "key": "COMP:12282733",
+    "name": "NFL",
+    "competitionId": 12282733,
+    "eventId": 28041972,
+    "eventTypeId": 6423,
+    "region": "International"
+   }
+  },
+  "events": {
+   "35605982": {
+    "competitionId": 12282733,
+    "inPlay": false,
+    "eventId": 35605982,
+    "key": "EVENT:35605982",
+    "name": "Indianapolis Colts @ Washington Commanders",
+    "eventTypeId": 6423,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T13:30:00.000Z",
+    "videoAvailable": false,
+    "primaryMarketId": "742.168820385"
+   }
+  },
+  "markets": {
+   "742.168820386": {
+    "marketId": "742.168820386",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "eventId": 35605982,
+    "marketName": "Total Points",
+    "marketTime": "2026-10-04T13:30:00.000Z",
+    "marketType": "TOTAL_POINTS_(OVER/UNDER)",
+    "bspMarket": false,
+    "sgmMarket": true,
+    "inPlay": false,
+    "numberOfRunners": 2,
+    "numberOfActiveRunners": 2,
+    "numberOfWinners": 1,
+    "sortPriority": -880,
+    "bettingType": "MOVING_HANDICAP",
+    "marketStatus": "OPEN",
+    "runners": [
+     {
+      "selectionId": 7017916,
+      "handicap": 48.5,
+      "runnerName": "Over",
+      "sortPriority": 1,
+      "result": {
+       "type": "OVER"
+      },
+      "runnerStatus": "ACTIVE",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -105,
+        "americanOddsInt": -105
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.952380952380952
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 105
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -104,
+         "americanOddsInt": -104
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.961538461538462
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 104
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 7017917,
+      "handicap": 48.5,
+      "runnerName": "Under",
+      "sortPriority": 2,
+      "result": {
+       "type": "UNDER"
+      },
+      "runnerStatus": "ACTIVE",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -115,
+        "americanOddsInt": -115
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.869565217391304
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 115
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -118,
+         "americanOddsInt": -118
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.847457627118644
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 118
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "canTurnInPlay": true,
+    "associatedMarkets": [
+     {
+      "eventId": 35605982,
+      "eventTypeId": 6423,
+      "externalMarketId": "42.578347284"
+     }
+    ],
+    "isSuperSubEnabled": false,
+    "isBetProtectEligible": false,
+    "shouldDisplayStatsInRunner": true,
+    "eachwayAvailable": false,
+    "legTypes": [
+     "SIMPLE_SELECTION"
+    ]
+   },
+   "742.168820385": {
+    "marketId": "742.168820385",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "eventId": 35605982,
+    "marketName": "Spread",
+    "marketTime": "2026-10-04T13:30:00.000Z",
+    "marketType": "MATCH_HANDICAP_(2-WAY)",
+    "bspMarket": false,
+    "sgmMarket": true,
+    "inPlay": false,
+    "numberOfRunners": 2,
+    "numberOfActiveRunners": 2,
+    "numberOfWinners": 1,
+    "sortPriority": -890,
+    "bettingType": "MOVING_HANDICAP",
+    "marketStatus": "OPEN",
+    "runners": [
+     {
+      "selectionId": 50200,
+      "handicap": -3.5,
+      "runnerName": "Indianapolis Colts",
+      "sortPriority": 1,
+      "result": {
+       "type": "AWAY"
+      },
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "nameAbbr": "IND Colts",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -105,
+        "americanOddsInt": -105
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.952380952380952
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 105
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -104,
+         "americanOddsInt": -104
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.961538461538462
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 104
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42568622,
+      "handicap": 3.5,
+      "runnerName": "Washington Commanders",
+      "sortPriority": 2,
+      "result": {
+       "type": "HOME"
+      },
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "nameAbbr": "WAS Commanders",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -115,
+        "americanOddsInt": -115
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.869565217391304
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 115
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -118,
+         "americanOddsInt": -118
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.847457627118644
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 118
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "canTurnInPlay": true,
+    "associatedMarkets": [
+     {
+      "eventId": 35605982,
+      "eventTypeId": 6423,
+      "externalMarketId": "42.578347282"
+     }
+    ],
+    "isSuperSubEnabled": false,
+    "isBetProtectEligible": false,
+    "shouldDisplayStatsInRunner": true,
+    "eachwayAvailable": false,
+    "legTypes": [
+     "SIMPLE_SELECTION"
+    ]
+   },
+   "742.168820384": {
+    "marketId": "742.168820384",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "eventId": 35605982,
+    "marketName": "Moneyline",
+    "marketTime": "2026-10-04T13:30:00.000Z",
+    "marketType": "MONEY_LINE",
+    "bspMarket": false,
+    "sgmMarket": true,
+    "inPlay": false,
+    "numberOfRunners": 2,
+    "numberOfActiveRunners": 2,
+    "numberOfWinners": 1,
+    "sortPriority": -900,
+    "bettingType": "ODDS",
+    "marketStatus": "OPEN",
+    "runners": [
+     {
+      "selectionId": 50200,
+      "handicap": 0,
+      "runnerName": "Indianapolis Colts",
+      "sortPriority": 1,
+      "result": {
+       "type": "AWAY"
+      },
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "nameAbbr": "IND Colts",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -184,
+        "americanOddsInt": -184
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.543478260869565
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 184
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -180,
+         "americanOddsInt": -180
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.555555555555556
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 180
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42568622,
+      "handicap": 0,
+      "runnerName": "Washington Commanders",
+      "sortPriority": 2,
+      "result": {
+       "type": "HOME"
+      },
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "nameAbbr": "WAS Commanders",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 154,
+        "americanOddsInt": 154
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 2.54
+        },
+        "fractionalOdds": {
+         "numerator": 154,
+         "denominator": 100
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 152,
+         "americanOddsInt": 152
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 2.52
+         },
+         "fractionalOdds": {
+          "numerator": 152,
+          "denominator": 100
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "canTurnInPlay": true,
+    "associatedMarkets": [
+     {
+      "eventId": 35605982,
+      "eventTypeId": 6423,
+      "externalMarketId": "42.578347281"
+     }
+    ],
+    "isSuperSubEnabled": false,
+    "isBetProtectEligible": false,
+    "shouldDisplayStatsInRunner": true,
+    "eachwayAvailable": false,
+    "legTypes": [
+     "SIMPLE_SELECTION"
+    ]
+   },
+   "742.188826918": {
+    "marketId": "742.188826918",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "eventId": 35605982,
+    "marketName": "Anytime 4th Quarter TD Scorer",
+    "marketTime": "2026-10-04T13:30:00.000Z",
+    "marketType": "ANYTIME_4TH_QTR_TD_SCORER",
+    "bspMarket": false,
+    "sgmMarket": true,
+    "inPlay": false,
+    "numberOfRunners": 31,
+    "numberOfActiveRunners": 31,
+    "numberOfWinners": 1,
+    "sortPriority": 6725,
+    "bettingType": "ODDS",
+    "marketStatus": "OPEN",
+    "runners": [
+     {
+      "selectionId": 16195884,
+      "handicap": 0,
+      "runnerName": "Jonathan Taylor",
+      "sortPriority": 1,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 220,
+        "americanOddsInt": 220
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 3.2
+        },
+        "fractionalOdds": {
+         "numerator": 22,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 230,
+         "americanOddsInt": 230
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 3.3
+         },
+         "fractionalOdds": {
+          "numerator": 23,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 87409614,
+      "handicap": 0,
+      "runnerName": "Jacory Croskey-Merritt",
+      "sortPriority": 2,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 460,
+        "americanOddsInt": 460
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 5.6
+        },
+        "fractionalOdds": {
+         "numerator": 46,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 450,
+         "americanOddsInt": 450
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 5.5
+         },
+         "fractionalOdds": {
+          "numerator": 45,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 60010430,
+      "handicap": 0,
+      "runnerName": "Tyler Warren",
+      "sortPriority": 3,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 650,
+        "americanOddsInt": 650
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 7.5
+        },
+        "fractionalOdds": {
+         "numerator": 65,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 700,
+         "americanOddsInt": 700
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 8
+         },
+         "fractionalOdds": {
+          "numerator": 70,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42198383,
+      "handicap": 0,
+      "runnerName": "Josh Downs",
+      "sortPriority": 4,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 750,
+        "americanOddsInt": 750
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 8.5
+        },
+        "fractionalOdds": {
+         "numerator": 75,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 800,
+         "americanOddsInt": 800
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 9
+         },
+         "fractionalOdds": {
+          "numerator": 80,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 12302590,
+      "handicap": 0,
+      "runnerName": "Terry McLaurin",
+      "sortPriority": 5,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 800,
+        "americanOddsInt": 800
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 9
+        },
+        "fractionalOdds": {
+         "numerator": 80,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 750,
+         "americanOddsInt": 750
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 8.5
+         },
+         "fractionalOdds": {
+          "numerator": 75,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 10288139,
+      "handicap": 0,
+      "runnerName": "Stefon Diggs",
+      "sortPriority": 6,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 800,
+        "americanOddsInt": 800
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 9
+        },
+        "fractionalOdds": {
+         "numerator": 80,
+         "denominator": 10
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 750,
+         "americanOddsInt": 750
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 8.5
+         },
+         "fractionalOdds": {
+          "numerator": 75,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 7727830,
+      "handicap": 0,
+      "runnerName": "Keenan Allen",
+      "sortPriority": 7,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1000,
+        "americanOddsInt": 1000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 11
+        },
+        "fractionalOdds": {
+         "numerator": 10,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 950,
+         "americanOddsInt": 950
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 10.5
+         },
+         "fractionalOdds": {
+          "numerator": 95,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48068918,
+      "handicap": 0,
+      "runnerName": "Kaytron Allen",
+      "sortPriority": 8,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1000,
+        "americanOddsInt": 1000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 11
+        },
+        "fractionalOdds": {
+         "numerator": 10,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 950,
+         "americanOddsInt": 950
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 10.5
+         },
+         "fractionalOdds": {
+          "numerator": 95,
+          "denominator": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 8776284,
+      "handicap": 0,
+      "runnerName": "Marcus Mariota",
+      "sortPriority": 9,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1100,
+        "americanOddsInt": 1100
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 12
+        },
+        "fractionalOdds": {
+         "numerator": 11,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1200,
+         "americanOddsInt": 1200
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 13
+         },
+         "fractionalOdds": {
+          "numerator": 12,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 44578689,
+      "handicap": 0,
+      "runnerName": "Chigoziem Okonkwo",
+      "sortPriority": 10,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1100,
+        "americanOddsInt": 1100
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 12
+        },
+        "fractionalOdds": {
+         "numerator": 11,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1000,
+         "americanOddsInt": 1000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 11
+         },
+         "fractionalOdds": {
+          "numerator": 10,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 16544531,
+      "handicap": 0,
+      "runnerName": "Daniel Jones",
+      "sortPriority": 11,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1200,
+        "americanOddsInt": 1200
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 13
+        },
+        "fractionalOdds": {
+         "numerator": 12,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1100,
+         "americanOddsInt": 1100
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 12
+         },
+         "fractionalOdds": {
+          "numerator": 11,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 38063388,
+      "handicap": 0,
+      "runnerName": "Antonio Williams",
+      "sortPriority": 12,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1500,
+        "americanOddsInt": 1500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 16
+        },
+        "fractionalOdds": {
+         "numerator": 15,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1600,
+         "americanOddsInt": 1600
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 17
+         },
+         "fractionalOdds": {
+          "numerator": 16,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 11151038,
+      "handicap": 0,
+      "runnerName": "Laquon Treadwell",
+      "sortPriority": 13,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1600,
+        "americanOddsInt": 1600
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 17
+        },
+        "fractionalOdds": {
+         "numerator": 16,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1700,
+         "americanOddsInt": 1700
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 18
+         },
+         "fractionalOdds": {
+          "numerator": 17,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 14807208,
+      "handicap": 0,
+      "runnerName": "Austin Ekeler",
+      "sortPriority": 14,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1800,
+        "americanOddsInt": 1800
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 19
+        },
+        "fractionalOdds": {
+         "numerator": 18,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1700,
+         "americanOddsInt": 1700
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 18
+         },
+         "fractionalOdds": {
+          "numerator": 17,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48074921,
+      "handicap": 0,
+      "runnerName": "Indianapolis Defense",
+      "sortPriority": 15,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1900,
+        "americanOddsInt": 1900
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 20
+        },
+        "fractionalOdds": {
+         "numerator": 19,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2000,
+         "americanOddsInt": 2000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 21
+         },
+         "fractionalOdds": {
+          "numerator": 20,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 23735956,
+      "handicap": 0,
+      "runnerName": "Darius Slayton",
+      "sortPriority": 16,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1900,
+        "americanOddsInt": 1900
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 20
+        },
+        "fractionalOdds": {
+         "numerator": 19,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2000,
+         "americanOddsInt": 2000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 21
+         },
+         "fractionalOdds": {
+          "numerator": 20,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 36929268,
+      "handicap": 0,
+      "runnerName": "Seth McGowan",
+      "sortPriority": 17,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 1900,
+        "americanOddsInt": 1900
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 20
+        },
+        "fractionalOdds": {
+         "numerator": 19,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2000,
+         "americanOddsInt": 2000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 21
+         },
+         "fractionalOdds": {
+          "numerator": 20,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 40855952,
+      "handicap": 0,
+      "runnerName": "John Bates",
+      "sortPriority": 18,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2000,
+        "americanOddsInt": 2000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 21
+        },
+        "fractionalOdds": {
+         "numerator": 20,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1900,
+         "americanOddsInt": 1900
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 20
+         },
+         "fractionalOdds": {
+          "numerator": 19,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48308856,
+      "handicap": 0,
+      "runnerName": "Ben Sinnott",
+      "sortPriority": 19,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2000,
+        "americanOddsInt": 2000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 21
+        },
+        "fractionalOdds": {
+         "numerator": 20,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1900,
+         "americanOddsInt": 1900
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 20
+         },
+         "fractionalOdds": {
+          "numerator": 19,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 37101847,
+      "handicap": 0,
+      "runnerName": "Dyami Brown",
+      "sortPriority": 20,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2000,
+        "americanOddsInt": 2000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 21
+        },
+        "fractionalOdds": {
+         "numerator": 20,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 1900,
+         "americanOddsInt": 1900
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 20
+         },
+         "fractionalOdds": {
+          "numerator": 19,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48074707,
+      "handicap": 0,
+      "runnerName": "Washington Defense",
+      "sortPriority": 21,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2200,
+        "americanOddsInt": 2200
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 23
+        },
+        "fractionalOdds": {
+         "numerator": 22,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2000,
+         "americanOddsInt": 2000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 21
+         },
+         "fractionalOdds": {
+          "numerator": 20,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 20945770,
+      "handicap": 0,
+      "runnerName": "Mo Alie-Cox",
+      "sortPriority": 22,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2500,
+        "americanOddsInt": 2500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 26
+        },
+        "fractionalOdds": {
+         "numerator": 25,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2700,
+         "americanOddsInt": 2700
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 28
+         },
+         "fractionalOdds": {
+          "numerator": 27,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 60885112,
+      "handicap": 0,
+      "runnerName": "Drew Ogletree",
+      "sortPriority": 23,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 2500,
+        "americanOddsInt": 2500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 26
+        },
+        "fractionalOdds": {
+         "numerator": 25,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 2700,
+         "americanOddsInt": 2700
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 28
+         },
+         "fractionalOdds": {
+          "numerator": 27,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 43162247,
+      "handicap": 0,
+      "runnerName": "Treylon Burks",
+      "sortPriority": 24,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 3500,
+        "americanOddsInt": 3500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 36
+        },
+        "fractionalOdds": {
+         "numerator": 35,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 3300,
+         "americanOddsInt": 3300
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 34
+         },
+         "fractionalOdds": {
+          "numerator": 33,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42076806,
+      "handicap": 0,
+      "runnerName": "Jaylin Lane",
+      "sortPriority": 25,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 3500,
+        "americanOddsInt": 3500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 36
+        },
+        "fractionalOdds": {
+         "numerator": 35,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 3300,
+         "americanOddsInt": 3300
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 34
+         },
+         "fractionalOdds": {
+          "numerator": 33,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 26556679,
+      "handicap": 0,
+      "runnerName": "Ashton Dulin",
+      "sortPriority": 26,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 3500,
+        "americanOddsInt": 3500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 36
+        },
+        "fractionalOdds": {
+         "numerator": 35,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 4000,
+         "americanOddsInt": 4000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 41
+         },
+         "fractionalOdds": {
+          "numerator": 40,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42200553,
+      "handicap": 0,
+      "runnerName": "Deion Burks",
+      "sortPriority": 27,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 3500,
+        "americanOddsInt": 3500
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 36
+        },
+        "fractionalOdds": {
+         "numerator": 35,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 4000,
+         "americanOddsInt": 4000
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 41
+         },
+         "fractionalOdds": {
+          "numerator": 40,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48711970,
+      "handicap": 0,
+      "runnerName": "Anthony Gould",
+      "sortPriority": 28,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 4000,
+        "americanOddsInt": 4000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 41
+        },
+        "fractionalOdds": {
+         "numerator": 40,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 3500,
+         "americanOddsInt": 3500
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 36
+         },
+         "fractionalOdds": {
+          "numerator": 35,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 48308862,
+      "handicap": 0,
+      "runnerName": "DJ Giddens",
+      "sortPriority": 29,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 4000,
+        "americanOddsInt": 4000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 41
+        },
+        "fractionalOdds": {
+         "numerator": 40,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 3500,
+         "americanOddsInt": 3500
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 36
+         },
+         "fractionalOdds": {
+          "numerator": 35,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 60048951,
+      "handicap": 0,
+      "runnerName": "Luke McCaffrey",
+      "sortPriority": 30,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 5000,
+        "americanOddsInt": 5000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 51
+        },
+        "fractionalOdds": {
+         "numerator": 50,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 5500,
+         "americanOddsInt": 5500
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 56
+         },
+         "fractionalOdds": {
+          "numerator": 55,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 73285105,
+      "handicap": 0,
+      "runnerName": "Colson Yankoff",
+      "sortPriority": 31,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders_jersey.png",
+      "secondaryLogo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "isPlayerSelection": true,
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 6000,
+        "americanOddsInt": 6000
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 61
+        },
+        "fractionalOdds": {
+         "numerator": 60,
+         "denominator": 1
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 5500,
+         "americanOddsInt": 5500
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 56
+         },
+         "fractionalOdds": {
+          "numerator": 55,
+          "denominator": 1
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "canTurnInPlay": true,
+    "associatedMarkets": [
+     {
+      "eventId": 35605982,
+      "eventTypeId": 6423,
+      "externalMarketId": "42.612073636"
+     }
+    ],
+    "isSuperSubEnabled": false,
+    "isBetProtectEligible": false,
+    "shouldDisplayStatsInRunner": true,
+    "eachwayAvailable": false,
+    "legTypes": [
+     "SIMPLE_SELECTION"
+    ]
+   },
+   "742.188825143": {
+    "marketId": "742.188825143",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "eventId": 35605982,
+    "marketName": "4th Quarter Winner",
+    "marketTime": "2026-10-04T13:30:00.000Z",
+    "marketType": "4TH_QUARTER_WINNER",
+    "bspMarket": false,
+    "sgmMarket": true,
+    "inPlay": false,
+    "numberOfRunners": 2,
+    "numberOfActiveRunners": 2,
+    "numberOfWinners": 1,
+    "sortPriority": 1050,
+    "bettingType": "ODDS",
+    "marketStatus": "OPEN",
+    "runners": [
+     {
+      "selectionId": 50200,
+      "handicap": 0,
+      "runnerName": "Indianapolis Colts",
+      "sortPriority": 1,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/indianapolis_colts.png",
+      "nameAbbr": "IND Colts",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": -140,
+        "americanOddsInt": -140
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 1.714285714285714
+        },
+        "fractionalOdds": {
+         "numerator": 100,
+         "denominator": 140
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": -134,
+         "americanOddsInt": -134
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 1.746268656716418
+         },
+         "fractionalOdds": {
+          "numerator": 100,
+          "denominator": 134
+         }
+        }
+       }
+      ]
+     },
+     {
+      "selectionId": 42568622,
+      "handicap": 0,
+      "runnerName": "Washington Commanders",
+      "sortPriority": 2,
+      "result": {},
+      "runnerStatus": "ACTIVE",
+      "logo": "https://assets.sportsbook.fanduel.com/images/team/nfl/washington_commanders.png",
+      "nameAbbr": "WAS Commanders",
+      "winRunnerOdds": {
+       "americanDisplayOdds": {
+        "americanOdds": 112,
+        "americanOddsInt": 112
+       },
+       "trueOdds": {
+        "decimalOdds": {
+         "decimalOdds": 2.12
+        },
+        "fractionalOdds": {
+         "numerator": 112,
+         "denominator": 100
+        }
+       }
+      },
+      "previousWinRunnerOdds": [
+       {
+        "americanDisplayOdds": {
+         "americanOdds": 110,
+         "americanOddsInt": 110
+        },
+        "trueOdds": {
+         "decimalOdds": {
+          "decimalOdds": 2.1
+         },
+         "fractionalOdds": {
+          "numerator": 110,
+          "denominator": 100
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "canTurnInPlay": true,
+    "associatedMarkets": [
+     {
+      "eventId": 35605982,
+      "eventTypeId": 6423,
+      "externalMarketId": "42.612070392"
+     }
+    ],
+    "isSuperSubEnabled": false,
+    "isBetProtectEligible": false,
+    "shouldDisplayStatsInRunner": true,
+    "eachwayAvailable": false,
+    "legTypes": [
+     "SIMPLE_SELECTION"
+    ]
+   }
+  }
+ }
+}

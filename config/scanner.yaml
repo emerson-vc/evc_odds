@@ -1,0 +1,20 @@
+# Scanner thresholds. Placeholders — tune from observed source behavior.
+
+freshness:
+  warning_seconds: 90
+  stale_seconds: 180     # Must exceed the slowest poll interval plus request time (FanDuel props: 120s).
+
+consensus:
+  method: weighted_median
+  devig_method: proportional
+
+scanner:
+  sports: [american_football]
+  leagues: [NFL]
+  market_types: [MONEYLINE, SPREAD, TOTAL, PLAYER_PASSING_YARDS, PLAYER_PASSING_TDS, PLAYER_RUSHING_YARDS,
+                 PLAYER_RECEIVING_YARDS, PLAYER_RECEPTIONS, PLAYER_PASS_RUSH_YARDS, PLAYER_RUSH_REC_YARDS,
+                 PLAYER_ANYTIME_TD]
+  pregame_only: true
+  min_ev_percent: 3.0
+  min_consensus_sources: 3
+  max_quote_age_seconds: 180

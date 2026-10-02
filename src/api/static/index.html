@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVC Odds</title>
+<style>
+  :root {
+    --bg: #0e1014; --panel: #161920; --panel-2: #1c2029; --line: #262b36;
+    --text: #e7e9ee; --muted: #8a92a3; --faint: #5b6271;
+    --best: #34d399; --best-bg: rgba(52, 211, 153, .12);
+    --flash: rgba(250, 204, 21, .28); --warn: #f59e0b; --bad: #ef4444; --accent: #60a5fa;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6f8; --panel: #ffffff; --panel-2: #f0f2f5; --line: #e2e5ea;
+      --text: #14171c; --muted: #5d6573; --faint: #9aa1ad;
+      --best: #059669; --best-bg: rgba(5, 150, 105, .10); --flash: rgba(234, 179, 8, .30);
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px;
+           padding: 14px 20px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  h1 { font-size: 17px; margin: 0; letter-spacing: .2px; }
+  h1 span { color: var(--muted); font-weight: 500; }
+  .updated { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .sources { display: flex; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+  .pill { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px;
+          background: var(--panel-2); border: 1px solid var(--line); font-size: 12px; white-space: nowrap; }
+  .pill.off { color: var(--faint); }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--faint); }
+  .dot.LIVE { background: var(--best); } .dot.DEGRADED, .dot.STARTING { background: var(--warn); }
+  .dot.BLOCKED, .dot.DISCONNECTED { background: var(--bad); }
+  .toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 20px; }
+  .tabs { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 3px; }
+  .tabs button { border: 0; background: none; color: var(--muted); font: inherit; padding: 6px 14px;
+                 border-radius: 6px; cursor: pointer; }
+  .tabs button.on { background: var(--panel-2); color: var(--text); font-weight: 600; }
+  input[type=search] { background: var(--panel); border: 1px solid var(--line); color: var(--text);
+                       border-radius: 8px; padding: 7px 10px; font: inherit; min-width: 200px; }
+  select { background: var(--panel); border: 1px solid var(--line); color: var(--text); border-radius: 8px;
+           padding: 7px 10px; font: inherit; }
+  body:not(.props) .props-only { display: none; }
+  tr.gamehead td { background: var(--panel-2); font-weight: 600; padding: 9px 12px; }
+  tr.gamehead .kick { margin-left: 10px; font-weight: 400; }
+  td.player { font-weight: 500; }
+  td.stat { color: var(--muted); font-size: 13px; }
+  tr.prop-first td { border-bottom: 1px dashed var(--line); }
+  label.check { color: var(--muted); font-size: 13px; display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+  .wrap { padding: 0 20px 40px; overflow-x: auto; }
+  table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--panel);
+          border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  th, td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+  thead th { position: sticky; top: 0; background: var(--panel-2); color: var(--muted); font-size: 12px;
+             font-weight: 600; text-transform: uppercase; letter-spacing: .4px; z-index: 1; }
+  tr.day td { background: var(--bg); color: var(--muted); font-size: 12px; font-weight: 600;
+              text-transform: uppercase; letter-spacing: .5px; padding: 14px 12px 6px; }
+  tr.second td { border-bottom: 1px solid var(--line); }
+  tr.first td { border-bottom: 1px dashed var(--line); }
+  td.game { vertical-align: middle; }
+  .matchup { font-weight: 600; }
+  .kick { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  td.side { color: var(--text); }
+  td.side .abbr { display: inline-block; min-width: 38px; color: var(--muted); font-size: 12px; }
+  td.price, th.price { text-align: center; font-variant-numeric: tabular-nums; min-width: 92px; }
+  .cell { display: inline-block; padding: 4px 8px; border-radius: 6px; transition: background 1.2s; }
+  .cell .ln { color: var(--muted); margin-right: 6px; font-size: 12px; }
+  .cell .nv { display: block; color: var(--faint); font-size: 11px; }
+  .cell.best { background: var(--best-bg); color: var(--best); font-weight: 700; }
+  .cell.alt .ln { color: var(--warn); }
+  .cell.stale { color: var(--faint); font-style: italic; }
+  .cell.susp { color: var(--faint); font-size: 12px; letter-spacing: .5px; }
+  .cell.flash { background: var(--flash); }
+  .bestcol .src { display: block; color: var(--muted); font-size: 11px; font-weight: 500; }
+  .empty, .banner { padding: 30px; text-align: center; color: var(--muted); }
+  .banner { padding: 10px 20px; background: rgba(239, 68, 68, .12); color: var(--bad); display: none; }
+  footer { color: var(--faint); font-size: 12px; padding: 0 20px 24px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>EVC Odds <span>· NFL pregame</span></h1>
+  <div class="updated" id="updated">connecting…</div>
+  <div class="sources" id="sources"></div>
+</header>
+<div class="banner" id="banner">Can't reach the local server — is it still running?</div>
+<div class="toolbar">
+  <div class="tabs" id="tabs">
+    <button data-m="MONEYLINE" class="on">Moneyline</button>
+    <button data-m="SPREAD">Spread</button>
+    <button data-m="TOTAL">Total</button>
+    <button data-m="PROPS">Player Props</button>
+  </div>
+  <select id="stat" class="props-only"></select>
+  <select id="game" class="props-only"><option value="">All games</option></select>
+  <input type="search" id="q" placeholder="Filter teams…">
+  <label class="check"><input type="checkbox" id="nv"> Show no-vig</label>
+</div>
+<div class="wrap"><table id="grid"></table></div>
+<footer>Page refreshes every 15s; FanDuel is checked every 1–2 min (gentle testing rate). <b style="color:var(--best)">Green</b> = best price on that line across books ·
+  <span style="background:var(--flash);padding:0 4px;border-radius:3px">yellow</span> = changed in the last 3 min ·
+  <i>grey italic</i> = stale · <span style="color:var(--warn)">≠ line</span> = that source doesn't offer the main line, so its nearest line is shown.
+  No-vig = that book's own price with its margin removed. Kalshi prices = buy price (ask) + trading fee.</footer>
+
+<script>
+const TABS = ['MONEYLINE', 'SPREAD', 'TOTAL', 'PROPS'];
+const hashTab = location.hash.slice(1).toUpperCase();
+const state = { market: TABS.includes(hashTab) ? hashTab : (localGet('market') || 'MONEYLINE'), filter: '', noVig: localGet('nv') === '1', data: null,
+                stat: localGet('stat') || 'OU', game: '' };
+const SIDES = { MONEYLINE: ['AWAY', 'HOME'], SPREAD: ['AWAY', 'HOME'], TOTAL: ['OVER', 'UNDER'] };
+const FLASH_SECONDS = 180;  // highlight changes for one full props refresh cycle
+
+function localGet(k) { try { return localStorage.getItem('evc.' + k); } catch { return null; } }
+function localSet(k, v) { try { localStorage.setItem('evc.' + k, v); } catch {} }
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+const am = n => n == null ? '—' : (n > 0 ? '+' + n : String(n));
+const signed = x => (x > 0 ? '+' : '') + x;
+
+function priceCell(market, c, nowSec) {
+  const span = el('span', 'cell');
+  if (!c) { span.textContent = '—'; span.classList.add('stale'); return span; }
+  if (!c.open) { span.textContent = 'SUSP'; span.classList.add('susp'); return span; }
+  if (market === 'SPREAD') span.append(el('span', 'ln', signed(c.line)));
+  else if (c.line != null && (market === 'TOTAL' || market === 'PROPS')) span.append(el('span', 'ln', c.line));
+  span.append(document.createTextNode(am(c.american)));
+  if (state.noVig && c.no_vig != null) span.append(el('span', 'nv', 'nv ' + am(c.no_vig)));
+  if (c.stale) span.classList.add('stale');
+  else if (c.best) span.classList.add('best');
+  if (c.changed && nowSec - c.changed < FLASH_SECONDS) span.classList.add('flash');
+  if (c.alt) { span.classList.add('alt'); span.querySelector('.ln')?.prepend('≠ '); }
+  span.title = [
+    c.alt ? 'different line from the other books' : null,
+    c.note, `decimal ${c.decimal}`, `${c.age}s old`,
+    c.no_vig != null ? `no-vig ${am(c.no_vig)}` : null,
+    c.liquidity != null ? `${Math.round(c.liquidity)} contracts at this price` : null,
+  ].filter(Boolean).join(' · ');
+  return span;
+}
+
+function fillSelect(sel, options, current) {
+  const key = JSON.stringify(options);
+  if (sel.dataset.key !== key) {
+    sel.replaceChildren(...options.map(([v, t]) => { const o = el('option', null, t); o.value = v; return o; }));
+    sel.dataset.key = key;
+  }
+  sel.value = options.some(([v]) => v === current) ? current : options[0][0];
+  return sel.value;
+}
+
+function bestTd(market, cells, labels, nowSec) {
+  const td = el('td', 'price bestcol');
+  const best = bestOf(cells, labels);
+  if (best) { const c = priceCell(market, { ...best.c, best: false }, nowSec); c.append(el('span', 'src', best.src)); td.append(c); }
+  else td.append(priceCell(market, null, nowSec));
+  return td;
+}
+
+function messageRow(body, text, span) {
+  const tr = el('tr'), td = el('td', 'empty', text); td.colSpan = span; tr.append(td); body.append(tr);
+}
+
+function renderProps(d, live, labels, nowSec) {
+  const ATD = 'PLAYER_ANYTIME_TD';
+  if (!d.prop_labels) {  // page is newer than the running server
+    const table = document.getElementById('grid'); table.replaceChildren();
+    const body = el('tbody'); table.append(body);
+    messageRow(body, 'The running server is an older version without player props. Restart it: Ctrl+C in its terminal, then .venv/bin/python -m src.api.app', 1);
+    return;
+  }
+  state.stat = fillSelect(document.getElementById('stat'),
+    [['OU', 'All over/under props'], ...Object.entries(d.prop_labels).filter(([k]) => k !== ATD), [ATD, d.prop_labels[ATD]]],
+    state.stat);
+  state.game = fillSelect(document.getElementById('game'),
+    [['', 'All games'], ...d.games.map(g => [g.event_id, `${g.away} @ ${g.home}`])], state.game);
+
+  const span = 4 + live.length;
+  const table = document.getElementById('grid'); table.replaceChildren();
+  const head = el('tr');
+  head.append(el('th', null, 'Player'), el('th', null, 'Prop'), el('th', null, ''), el('th', 'price', 'Best'));
+  for (const s of live) head.append(el('th', 'price', s.label));
+  const thead = el('thead'); thead.append(head); table.append(thead);
+  const body = el('tbody'); table.append(body);
+
+  const f = state.filter.trim().toLowerCase();
+  const wantStat = p => state.stat === 'OU' ? p.market_type !== ATD : p.market_type === state.stat;
+  let rows = 0, lastDay = null;
+  for (const g of d.games) {
+    if (state.game && g.event_id !== state.game) continue;
+    const teamHit = !f || [g.away, g.home, g.away_name, g.home_name].join(' ').toLowerCase().includes(f);
+    const props = (g.props || []).filter(p => wantStat(p) && (teamHit || p.player_name.toLowerCase().includes(f)));
+    if (!props.length) continue;
+
+    const start = new Date(g.start);
+    const day = start.toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
+    if (day !== lastDay) { const tr = el('tr', 'day'), td = el('td', null, day); td.colSpan = span; tr.append(td); body.append(tr); lastDay = day; }
+    const gh = el('tr', 'gamehead'), ghTd = el('td', null, `${g.away_name} @ ${g.home_name}`); ghTd.colSpan = span;
+    ghTd.append(el('span', 'kick', start.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })));
+    gh.append(ghTd); body.append(gh);
+
+    for (const p of props) {
+      const sides = p.market_type === ATD ? ['YES'] : ['OVER', 'UNDER'];
+      sides.forEach((side, i) => {
+        const tr = el('tr', sides.length === 2 && i === 0 ? 'prop-first' : '');
+        if (i === 0) {
+          const pl = el('td', 'player', p.player_name); pl.rowSpan = sides.length;
+          const st = el('td', 'stat', p.label); st.rowSpan = sides.length;
+          tr.append(pl, st);
+        }
+        tr.append(el('td', 'side', { OVER: 'Over', UNDER: 'Under', YES: 'Yes' }[side]));
+        const cells = p.sides[side] || {};
+        tr.append(bestTd('PROPS', cells, labels, nowSec));
+        for (const s of live) { const td = el('td', 'price'); td.append(priceCell('PROPS', cells[s.name], nowSec)); tr.append(td); }
+        body.append(tr); rows++;
+      });
+    }
+  }
+  if (!rows) messageRow(body, d.games.some(g => (g.props || []).length) ? 'No props match the filters.' : 'Waiting for props…', span);
+}
+
+// Best available price, on the line offered by the most books (different lines are different bets).
+function bestOf(cells, labels) {
+  const byLine = {};
+  for (const [src, c] of Object.entries(cells || {})) {
+    if (!c.open || c.stale) continue;
+    (byLine[c.line] ??= []).push([src, c]);
+  }
+  const groups = Object.values(byLine).sort((a, b) => b.length - a.length);
+  if (!groups.length) return null;
+  const [src, c] = groups[0].reduce((a, b) => (b[1].decimal > a[1].decimal ? b : a));
+  return { src: labels[src] || src, c };
+}
+
+function render() {
+  const d = state.data; if (!d) return;
+  const nowSec = Date.now() / 1000;
+  const market = state.market;
+  const live = d.sources.filter(s => s.enabled);
+  const labels = Object.fromEntries(d.sources.map(s => [s.name, s.label]));
+
+  // header: source pills
+  const pills = document.getElementById('sources'); pills.replaceChildren();
+  for (const s of d.sources) {
+    const p = el('span', 'pill' + (s.enabled ? '' : ' off'));
+    p.append(el('span', 'dot ' + (s.enabled ? s.health : '')), document.createTextNode(s.label));
+    if (s.enabled) p.title = `${s.health} · ${s.quotes} quotes · last response ${s.last_success_age ?? '—'}s ago`;
+    else p.title = 'not connected yet';
+    pills.append(p);
+  }
+
+  document.body.classList.toggle('props', market === 'PROPS');
+  document.getElementById('q').placeholder = market === 'PROPS' ? 'Filter players or teams…' : 'Filter teams…';
+  if (market === 'PROPS') return renderProps(d, live, labels, nowSec);
+
+  const table = document.getElementById('grid'); table.replaceChildren();
+  const head = el('tr');
+  head.append(el('th', null, 'Game'), el('th', null, market === 'TOTAL' ? '' : 'Team'), el('th', 'price', 'Best'));
+  for (const s of live) head.append(el('th', 'price', s.label));
+  const thead = el('thead'); thead.append(head); table.append(thead);
+  const body = el('tbody'); table.append(body);
+
+  const f = state.filter.trim().toLowerCase();
+  const games = d.games.filter(g => !f || [g.away, g.home, g.away_name, g.home_name].join(' ').toLowerCase().includes(f));
+  if (!games.length) {
+    const tr = el('tr'), td = el('td', 'empty', d.games.length ? 'No games match the filter.' : 'Waiting for odds…');
+    td.colSpan = 3 + live.length; tr.append(td); body.append(tr); return;
+  }
+
+  let lastDay = null;
+  for (const g of games) {
+    const start = new Date(g.start);
+    const day = start.toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' });
+    if (day !== lastDay) {
+      const tr = el('tr', 'day'), td = el('td', null, day); td.colSpan = 3 + live.length; tr.append(td); body.append(tr);
+      lastDay = day;
+    }
+    SIDES[market].forEach((side, i) => {
+      const tr = el('tr', i === 0 ? 'first' : 'second');
+      if (i === 0) {
+        const td = el('td', 'game'); td.rowSpan = 2;
+        td.append(el('div', 'matchup', `${g.away} @ ${g.home}`),
+                  el('div', 'kick', start.toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })));
+        tr.append(td);
+      }
+      const sideTd = el('td', 'side');
+      if (market === 'TOTAL') sideTd.textContent = side === 'OVER' ? 'Over' : 'Under';
+      else {
+        const code = side === 'AWAY' ? g.away : g.home;
+        sideTd.append(el('span', 'abbr', code), document.createTextNode(side === 'AWAY' ? g.away_name : g.home_name));
+      }
+      tr.append(sideTd);
+
+      const cells = (g.markets[market] || {})[side] || {};
+      const best = bestOf(cells, labels);
+      const bestTd = el('td', 'price bestcol');
+      if (best) { const c = priceCell(market, { ...best.c, best: false }, nowSec); c.append(el('span', 'src', best.src)); bestTd.append(c); }
+      else bestTd.append(priceCell(market, null, nowSec));
+      tr.append(bestTd);
+
+      for (const s of live) { const td = el('td', 'price'); td.append(priceCell(market, cells[s.name], nowSec)); tr.append(td); }
+      body.append(tr);
+    });
+  }
+}
+
+function showBanner(msg) {
+  const b = document.getElementById('banner');
+  b.textContent = msg || ''; b.style.display = msg ? 'block' : 'none';
+}
+
+async function refresh() {
+  if (location.protocol === 'file:') {
+    showBanner('Open this page through the server: run `.venv/bin/python -m src.api.app`, then go to http://127.0.0.1:8000');
+    return;
+  }
+  try {
+    const r = await fetch('/api/board', { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    state.data = await r.json();
+    state.fetchedAt = Date.now();
+  } catch (e) {
+    showBanner("Can't reach the local server — is it still running? (.venv/bin/python -m src.api.app)");
+    return;
+  }
+  try {
+    render();
+    showBanner('');
+  } catch (e) {  // a page bug, not a server problem — say so
+    console.error(e);
+    showBanner('Page error while drawing the table: ' + e.message);
+  }
+}
+
+function tickUpdated() {
+  const u = document.getElementById('updated');
+  if (!state.fetchedAt) return;
+  const live = (state.data?.sources || []).filter(s => s.enabled);
+  const ages = live.map(s => s.last_success_age).filter(x => x != null);
+  const freshest = ages.length ? Math.min(...ages) : null;
+  u.textContent = `${state.data.games.length} games · page ${((Date.now() - state.fetchedAt) / 1000).toFixed(0)}s ago` +
+                  (freshest != null ? ` · odds ${freshest.toFixed(0)}s old` : '');
+}
+
+document.getElementById('tabs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  state.market = b.dataset.m; localSet('market', state.market);
+  for (const x of document.querySelectorAll('#tabs button')) x.classList.toggle('on', x === b);
+  render();
+});
+document.getElementById('q').addEventListener('input', e => { state.filter = e.target.value; render(); });
+document.getElementById('stat').addEventListener('change', e => { state.stat = e.target.value; localSet('stat', state.stat); render(); });
+document.getElementById('game').addEventListener('change', e => { state.game = e.target.value; render(); });
+const nv = document.getElementById('nv'); nv.checked = state.noVig;
+nv.addEventListener('change', () => { state.noVig = nv.checked; localSet('nv', nv.checked ? '1' : '0'); render(); });
+for (const x of document.querySelectorAll('#tabs button')) x.classList.toggle('on', x.dataset.m === state.market);
+
+refresh();
+setInterval(refresh, 15000);  // local server only; FanDuel is polled on its own schedule (config/sources.yaml)
+setInterval(tickUpdated, 1000);
+</script>
+</body>
+</html>

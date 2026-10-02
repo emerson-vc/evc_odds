@@ -1,0 +1,820 @@
+{
+ "facets": [
+  {
+   "values": [
+    {
+     "key": {
+      "competitionId": 12282733
+     },
+     "cardinality": 4917
+    }
+   ],
+   "totalResults": 1,
+   "type": "COMPETITION"
+  },
+  {
+   "values": [
+    {
+     "key": {
+      "eventId": 36104915
+     },
+     "cardinality": 149,
+     "next": {
+      "values": [
+       {
+        "value": "true",
+        "cardinality": 149
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 35605982
+     },
+     "cardinality": 327,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 327
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104923
+     },
+     "cardinality": 301,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 301
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104918
+     },
+     "cardinality": 392,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 392
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104920
+     },
+     "cardinality": 326,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 326
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104914
+     },
+     "cardinality": 290,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 290
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104917
+     },
+     "cardinality": 300,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 300
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104922
+     },
+     "cardinality": 360,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 360
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104916
+     },
+     "cardinality": 234,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 234
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104919
+     },
+     "cardinality": 349,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 349
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104925
+     },
+     "cardinality": 292,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 292
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104921
+     },
+     "cardinality": 278,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 278
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104924
+     },
+     "cardinality": 292,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 292
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104926
+     },
+     "cardinality": 353,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 353
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104927
+     },
+     "cardinality": 339,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 339
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36104928
+     },
+     "cardinality": 283,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 283
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132640
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 35605983
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132641
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132639
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132651
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132644
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132638
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132649
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132645
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132646
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132647
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132648
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    },
+    {
+     "key": {
+      "eventId": 36132650
+     },
+     "cardinality": 4,
+     "next": {
+      "values": [
+       {
+        "value": "false",
+        "cardinality": 4
+       }
+      ],
+      "totalResults": 1,
+      "type": "IN_PLAY"
+     }
+    }
+   ],
+   "totalResults": 29,
+   "type": "EVENT"
+  }
+ ],
+ "results": [],
+ "attachments": {
+  "events": {
+   "35605983": {
+    "eventId": 35605983,
+    "key": "EVENT:35605983",
+    "name": "Philadelphia Eagles @ Jacksonville Jaguars",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T13:30:00.000Z",
+    "videoAvailable": false
+   },
+   "36132647": {
+    "eventId": 36132647,
+    "key": "EVENT:36132647",
+    "name": "Detroit Lions @ Arizona Cardinals",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T20:26:00.000Z",
+    "videoAvailable": false
+   },
+   "35605982": {
+    "eventId": 35605982,
+    "key": "EVENT:35605982",
+    "name": "Indianapolis Colts @ Washington Commanders",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T13:30:00.000Z",
+    "videoAvailable": false
+   },
+   "36132646": {
+    "eventId": 36132646,
+    "key": "EVENT:36132646",
+    "name": "San Francisco 49ers @ Seattle Seahawks",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T20:26:00.000Z",
+    "videoAvailable": false
+   },
+   "36132645": {
+    "eventId": 36132645,
+    "key": "EVENT:36132645",
+    "name": "Denver Broncos @ Los Angeles Chargers",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T20:06:00.000Z",
+    "videoAvailable": false
+   },
+   "36132644": {
+    "eventId": 36132644,
+    "key": "EVENT:36132644",
+    "name": "Houston Texans @ Tennessee Titans",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104928": {
+    "eventId": 36104928,
+    "key": "EVENT:36104928",
+    "name": "Atlanta Falcons @ New Orleans Saints",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-06T00:16:00.000Z",
+    "videoAvailable": false
+   },
+   "36132641": {
+    "eventId": 36132641,
+    "key": "EVENT:36132641",
+    "name": "Las Vegas Raiders @ New England Patriots",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36132640": {
+    "eventId": 36132640,
+    "key": "EVENT:36132640",
+    "name": "Tampa Bay Buccaneers @ Dallas Cowboys",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-09T00:16:00.000Z",
+    "videoAvailable": false
+   },
+   "36132651": {
+    "eventId": 36132651,
+    "key": "EVENT:36132651",
+    "name": "New York Giants @ Washington Commanders",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36132650": {
+    "eventId": 36132650,
+    "key": "EVENT:36132650",
+    "name": "Buffalo Bills @ Los Angeles Rams",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-13T00:16:00.000Z",
+    "videoAvailable": false
+   },
+   "36132649": {
+    "eventId": 36132649,
+    "key": "EVENT:36132649",
+    "name": "Chicago Bears @ Green Bay Packers",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36132648": {
+    "eventId": 36132648,
+    "key": "EVENT:36132648",
+    "name": "Baltimore Ravens @ Atlanta Falcons",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-12T00:21:00.000Z",
+    "videoAvailable": false
+   },
+   "36104918": {
+    "eventId": 36104918,
+    "key": "EVENT:36104918",
+    "name": "New England Patriots @ Buffalo Bills",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104919": {
+    "eventId": 36104919,
+    "key": "EVENT:36104919",
+    "name": "Jacksonville Jaguars @ Cincinnati Bengals",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104916": {
+    "eventId": 36104916,
+    "key": "EVENT:36104916",
+    "name": "New York Jets @ Chicago Bears",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104917": {
+    "eventId": 36104917,
+    "key": "EVENT:36104917",
+    "name": "Green Bay Packers @ Tampa Bay Buccaneers",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104914": {
+    "eventId": 36104914,
+    "key": "EVENT:36104914",
+    "name": "Tennessee Titans @ Baltimore Ravens",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104915": {
+    "eventId": 36104915,
+    "key": "EVENT:36104915",
+    "name": "Pittsburgh Steelers @ Cleveland Browns",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-02T00:16:00.000Z",
+    "videoAvailable": true
+   },
+   "36132639": {
+    "eventId": 36132639,
+    "key": "EVENT:36132639",
+    "name": "Minnesota Vikings @ New Orleans Saints",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104926": {
+    "eventId": 36104926,
+    "key": "EVENT:36104926",
+    "name": "Kansas City Chiefs @ Las Vegas Raiders",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T20:26:00.000Z",
+    "videoAvailable": false
+   },
+   "36104927": {
+    "eventId": 36104927,
+    "key": "EVENT:36104927",
+    "name": "Detroit Lions @ Carolina Panthers",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-05T00:21:00.000Z",
+    "videoAvailable": false
+   },
+   "36132638": {
+    "eventId": 36132638,
+    "key": "EVENT:36132638",
+    "name": "Cincinnati Bengals @ Miami Dolphins",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-11T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104924": {
+    "eventId": 36104924,
+    "key": "EVENT:36104924",
+    "name": "Denver Broncos @ San Francisco 49ers",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T20:26:00.000Z",
+    "videoAvailable": false
+   },
+   "36104925": {
+    "eventId": 36104925,
+    "key": "EVENT:36104925",
+    "name": "Miami Dolphins @ Minnesota Vikings",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T20:06:00.000Z",
+    "videoAvailable": false
+   },
+   "36104922": {
+    "eventId": 36104922,
+    "key": "EVENT:36104922",
+    "name": "Dallas Cowboys @ Houston Texans",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104923": {
+    "eventId": 36104923,
+    "key": "EVENT:36104923",
+    "name": "Los Angeles Rams @ Philadelphia Eagles",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104920": {
+    "eventId": 36104920,
+    "key": "EVENT:36104920",
+    "name": "Arizona Cardinals @ New York Giants",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T17:01:00.000Z",
+    "videoAvailable": false
+   },
+   "36104921": {
+    "eventId": 36104921,
+    "key": "EVENT:36104921",
+    "name": "Los Angeles Chargers @ Seattle Seahawks",
+    "eventTypeId": 6423,
+    "competitionId": 12282733,
+    "countryCode": "GB",
+    "timezone": "GMT",
+    "openDate": "2026-10-04T20:26:00.000Z",
+    "videoAvailable": false
+   }
+  },
+  "competitions": {
+   "12282733": {
+    "key": "COMP:12282733",
+    "name": "NFL",
+    "competitionId": 12282733,
+    "eventId": 28041972,
+    "eventTypeId": 6423,
+    "region": "International"
+   }
+  }
+ }
+}

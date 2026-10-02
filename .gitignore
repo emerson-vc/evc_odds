@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Secrets / local config
+.env
+.claude/settings.local.json
+
+# Raw captures may contain cookies and anti-bot tokens. Only redacted fixtures go in tests/fixtures/.
+captures/raw/
+
+# Runtime data
+data/
+
+# OS / editor noise
+.DS_Store
+.Rhistory
