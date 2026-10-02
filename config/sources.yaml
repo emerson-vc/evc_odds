@@ -28,13 +28,52 @@ sources:
     nfl_competition_id: 12282733   # FanDuel's id for "NFL" (observed).
 
   # Not implemented yet. Listed so weights / eligibility live in one place.
-  draftkings: {label: DraftKings, enabled: false, candidate_eligible: true,  weight: 1.0}
-  betmgm:     {label: BetMGM, enabled: false, candidate_eligible: true,  weight: 1.0}
+  draftkings:
+    label: DraftKings
+    enabled: true
+    candidate_eligible: true
+    weight: 1.0
+    # Observed in a browser capture 2026-10-01. UNDOCUMENTED: may change without notice.
+    base_url: "https://sportsbook-nash.draftkings.com/sites/US-PA-SB/api"
+    location: US-PA
+    nfl_league_id: 88808
+    # DraftKings needs one request per game per section (~28 for game lines, ~8 per game for props),
+    # so these are slow on purpose. Average ~1 request every 5s, never closer than 3s apart.
+    poll_seconds: 300          # game lines for every game
+    props_poll_seconds: 1200   # player props (sections not posted yet are skipped until the next rediscovery)
+    discover_seconds: 900
+    request_spacing_seconds: 3
+    timeout_seconds: 20
+  betmgm:
+    label: BetMGM
+    enabled: true
+    candidate_eligible: true
+    weight: 1.0
+    # The scanner can't request BetMGM (Cloudflare bot protection, 403). Data comes ONLY from the passive
+    # browser extension (browser_ext/betmgm_tap/) copying what BetMGM pages you have open receive.
+    mode: browser_tap
+    # BetMGM pages don't refresh odds on their own (idle capture 2026-10-02: no polling, no WebSocket); data
+    # arrives on page loads, or every N min with the extension's opt-in auto-reload (default 5).
+    stale_seconds: 420           # per-source override of scanner.yaml freshness.stale_seconds
+    stale_candidate_policy: flag # +EV engine (later): show stale BetMGM opportunities labeled with age; user verifies
+    idle_seconds: 600            # no payload for this long -> shown as DISCONNECTED (no BetMGM tab sending)
+    max_ingest_bytes: 40000000   # the all-games football list is ~13 MB
+    max_queued_payloads: 50
   fanatics:   {label: Fanatics, enabled: false, candidate_eligible: true,  weight: 1.0}
   betrivers:  {label: BetRivers, enabled: false, candidate_eligible: true,  weight: 1.0}
   pinnacle:   {label: Pinnacle, enabled: false, candidate_eligible: false, weight: 1.0}  # Doesn't serve US; API partner-only.
   circa:      {label: Circa, enabled: false, candidate_eligible: false, weight: 1.0}  # Not licensed in PA.
-  polymarket: {label: Polymarket, enabled: false, candidate_eligible: true,  weight: 1.0}  # Polymarket US only; intl = consensus-only.
+  polymarket:
+    label: Polymarket US
+    enabled: true
+    candidate_eligible: true     # Polymarket US is open to PA residents. (International polymarket.com is not used.)
+    weight: 1.0
+    # Official public API, no key needed (docs.polymarket.us). One request (~1 MB gzipped) covers every NFL game.
+    base_url: "https://gateway.polymarket.us"
+    league: nfl
+    poll_seconds: 120
+    timeout_seconds: 60
+    default_fee_coefficient: 0.0695   # docs.polymarket.us/fees; each market's own feeCoefficient is used when present
   kalshi:
     label: Kalshi
     enabled: true

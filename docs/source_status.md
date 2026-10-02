@@ -18,13 +18,13 @@ Every claim below is tagged **[doc]** (read on official docs), **[search]** (fro
 | # | Source | Type | Status | Official API | Market-data auth | Streaming | NFL ML/spread/total | Fixture |
 |---|---|---|---|---|---|---|---|---|
 | 1 | FanDuel | Sportsbook | **working-undocumented** (PA) | None | None (logged out, no cookies) | Polling (10s) | yes, verified live | `tests/fixtures/fanduel/` |
-| 2 | DraftKings | Sportsbook | undocumented-needs-capture | None found | n/a | unknown | yes (product) | — |
-| 3 | BetMGM | Sportsbook | undocumented-needs-capture | None found | n/a | unknown | yes (product) | — |
+| 2 | DraftKings | Sportsbook | **working-undocumented** (PA) | None | None (logged out, no cookies, no token) | Polling (5 min lines / 20 min props) | yes, verified live (+ player props) | `tests/fixtures/draftkings/` |
+| 3 | BetMGM | Sportsbook | **in progress: passive browser tap** (direct access blocked by Cloudflare) | None | Browser-only (non-browser requests get 403) | Push from user's open tabs | yes (parser verified on capture) | `tests/fixtures/betmgm/` |
 | 4 | Fanatics | Sportsbook | undocumented-needs-capture | None found | n/a | unknown | yes (product) | — |
 | 5 | BetRivers | Sportsbook | undocumented-needs-capture | None found | n/a | unknown | yes (product) | — |
 | 6 | Pinnacle | Sharp book | partner-only (email application) | Yes, closed to public since 2025-07-23 | API key on approval | REST | yes | — |
 | 7 | Circa | Sharp book | blocked / undocumented | None found | n/a | unknown | yes (product) | — |
-| 8 | Polymarket | Exchange | official-available | Yes (two products: intl + US) | Public reads | WebSocket | TODO verify NFL on US product | — |
+| 8 | Polymarket **US** | Exchange | **working-official** | Yes (`gateway.polymarket.us`) | None for market data | Polling (120s, 1 request) | ML/spread/total verified live; **no player props listed** | `tests/fixtures/polymarket/` |
 | 9 | Kalshi | Exchange | **working-official** | Yes | None for REST market data | Polling (60s); WS available w/ key | yes, verified live (+ player props) | `tests/fixtures/kalshi/` |
 | 10 | Novig | Exchange | official-available | Yes | REST public; WS needs key | WebSocket | TODO verify | — |
 | 11 | ProphetX | Exchange | partner-only (affiliate key) | Yes | Affiliate API key | REST only (documented) | TODO verify | — |
@@ -67,7 +67,31 @@ Flags live in `config/sources.yaml` (`candidate_eligible`).
 - **Assumption (TODO verify in FanDuel house rules):** NFL full-game lines and player stats include overtime.
 - **Known limitation:** FanDuel's ToS likely restricts automated access; personal, low-rate, read-only use accepted by the user.
 
-### 2–5. DraftKings, BetMGM, Fanatics, BetRivers
+### 2. DraftKings — working (undocumented)
+**Verified 2026-10-01/02** from a user browser capture (`captures/raw/draftkings_2026-10_01.har`) and live runs from PA. Adapter: `src/adapters/draftkings.py`.
+
+- **Observed endpoints** (site `US-PA-SB`, host `sportsbook-nash.draftkings.com`):
+  - `GET .../sportscontent/navigation/dkuspa/v2/nav/leagues/88808`: NFL games with home/away, kickoff, status (`NOT_STARTED`/`STARTED`).
+  - `GET .../sportscontent/controldata/event/eventSubcategory/v1/markets?...&marketsQuery=$filter=eventId eq '<id>' AND clientMetadata/subCategoryId eq '<sub>' ...`: markets + selections for one game section.
+- **Section (subcategory) ids** taken from DraftKings' own page-layout response in the capture: game lines 4518; anytime TD 12438; O/U props: pass yds 9524, pass TDs 9525, rush yds 9514, rec yds 14114, receptions 14115, pass+rush 9532, rush+rec 9523. Only 4518 and 12438 were opened in the browser; the O/U response shape was confirmed by a live request (pass yds 9524).
+- **Access:** works logged out, no cookies, honest user-agent. No anti-bot token in the capture. The site's `x-pe-*` headers are plain labels (`web`, `SB`, `US-PA`, app version), sent as-is.
+- **Cost:** one request per game per section, and no live-update stream was captured (DK likely pushes over a WebSocket we didn't record). Polling is deliberately slow: lines every 5 min, props every 20 min, ≥3 s apart (~1 request every 4–5 s on average). **Improvement TODO:** a capture of the NFL league page (all games' lines in one view) could replace ~28 requests per cycle with one.
+- **Coverage 2026-10-02:** game lines for all 28 upcoming games; O/U props + anytime TD for this week's games (~1,580 quotes). Team-defense ("D/ST") TD selections skipped.
+- **Assumptions (TODO verify):** no suspension field appeared in the capture (we honor `isSuspended` if present); NFL lines/stats include overtime.
+
+### 3. BetMGM — blocked
+**Checked 2026-10-02** from a user browser capture (`captures/raw/mgm_2026-10-02.har`, 194 MB) and a 3-request live test from PA.
+
+- **What the site uses (observed):** `GET www.pa.betmgm.com/cds-api/bettingoffer/fixtures?sportIds=11&...` (all football games with every game line incl. ~40 alt spreads/totals each, paginated `skip`/`take`) and `.../fixture-view?fixtureIds=<id>&offerMapping=All&...` (one game, ~625 markets incl. player O/U props like "Daniel Jones - Passing Yards" O/U 223.5 and "to score 1+ TDs"). Requests carry a static public `x-bwin-accessid` (stored in `.env` as `BETMGM_ACCESS_ID`) and plain label headers; no cookies or tokens in the capture.
+- **Live test result:** both endpoints return **HTTP 403 with a Cloudflare block page** (`server: cloudflare`, sets the `__cf_bm` bot-management cookie) to a plain, honestly-identified client. Cloudflare's bot management verifies real browsers with in-browser checks.
+- **Decision:** passing those checks from a program would mean reusing browser cookies or faking a browser, which CLAUDE.md §5 forbids. **No adapter built. Do not retry with modified headers.**
+- **Chosen route (2026-10-02): passive browser tap.** A personal Chrome extension (`browser_ext/betmgm_tap/`, to be built) copies the `fixtures` / `fixture-view` JSON that BetMGM's own page receives in the user's normal browser and POSTs it to the local server. It sends no requests to BetMGM, never reloads or clicks. Coverage = BetMGM pages the user has open.
+  - **Done:** parser `src/adapters/betmgm.py` (game lines incl. alt lines, plain O/U player props, anytime TD; milestone "X+" bets skipped), push adapter, `POST /ingest/betmgm` (localhost + custom header + size cap), tests from capture fixtures. End-to-end check by posting the saved capture: 222 quotes, BetMGM column alongside FanDuel/DraftKings/Kalshi, 0 requests to BetMGM.
+  - **Idle capture (`captures/raw/mgm_idle_2026-10-02.har`, 2.4 min, game page open):** one `fixture-view` on load, then **no further odds traffic**: no polling, no WebSocket (the ~350 `partytown` proxy requests are ads/analytics, checked: no odds data). So BetMGM pregame odds arrive only on page load/navigation.
+  - **Extension built** (`browser_ext/betmgm_tap/`, see its README): passive tap of `fixtures`/`fixture-view` (fetch + XHR), relayed to `POST /ingest/betmgm`; query string (access id) dropped; optional **auto-reload of user-marked tabs** (off by default, default 5 min, tabs 20 s apart, never the focused tab), chosen by the user 2026-10-02. Tap logic tested in Node with a fake page; not yet run in the user's Chrome.
+  - **Freshness policy (user, 2026-10-02):** BetMGM stale cutoff 420 s (per-source override); stale BetMGM opportunities will be shown labeled with age for the user to verify (`stale_candidate_policy: flag`).
+
+### 4–5. Fanatics, BetRivers
 - **Official API:** none found. Search results and multiple aggregator vendors state that FanDuel/DraftKings/BetMGM offer no public developer API [search]: [oddspapi FanDuel](https://oddspapi.io/blog/fanduel-api-odds-access/), [sportsapis.dev](https://sportsapis.dev/sportsbook-api). No first-party statement found either way for Fanatics or BetRivers [assumption: same situation].
 - **Possible paths:**
   1. **User-captured frontend traffic** (DevTools → Network → save JSON/HAR while viewing NFL odds in a legal state). Permitted under CLAUDE.md §5 as long as no anti-bot/geo/auth controls are bypassed. Undocumented, so it may break at any time.
@@ -83,7 +107,16 @@ Flags live in `config/sources.yaml` (`candidate_eligible`).
 - No public API or developer tools found [search]: [sportsapis.dev/circa-api](https://sportsapis.dev/circa-api). Several paid aggregators claim Circa coverage (OpticOdds, Betstamp, SportsGameOdds, SharpAPI) [search]. The Odds API does **not** list Circa [doc].
 - **TODO:** confirm whether Circa's web/app shows odds without login; otherwise mark blocked or aggregator-only.
 
-### 8. Polymarket
+### 8. Polymarket US — working (official API)
+**Verified 2026-10-02** with live runs. Adapter: `src/adapters/polymarket.py`. International polymarket.com is not used (US-geoblocked).
+
+- **Endpoint:** `GET https://gateway.polymarket.us/v2/leagues/nfl/events?limit=100&type=sport`, public, no key [doc: docs.polymarket.us/api-reference/authentication]. Returns every NFL game with all markets and best bid/ask inline (~35 MB raw, ~1 MB gzipped). One request per 120 s.
+- **Markets used** (wording from each market's description): `football_team_full_game_winner` (ties settle $0.50, like Kalshi; books refund), `football_team_full_game_spread` (long = "<team> covers a ±X point spread", short = other team at ∓X; the `title` field reads inverted, description + side labels used), `football_team_full_game_total` (the **game** total: "combine for over X"). Skipped: `football_team_points_full_game_total` (team totals), halves/quarters. Overtime included in all. No player props on Polymarket US.
+- **Pricing:** each side's `quote` = price to buy that side (long = best ask, short = 1 − best bid; checked). Taker fee θ·p·(1−p), θ = market `feeCoefficient` = 0.0695 [doc: docs.polymarket.us/fees]. Order-book depth isn't in this payload → liquidity unknown (TODO: weight accordingly in consensus, or fetch `/v1/markets/{slug}/bbo` for candidates).
+- **Events:** no home/away marker; attached to other sources' games by date + teams.
+- **Coverage 2026-10-02:** all 28 listed games (this week and next), ~3,000 quotes (spread/total ladders).
+
+#### Original research notes (international + US)
 - **Two distinct products:**
   - *International* (polymarket.com): CLOB REST `https://clob.polymarket.com`; public market WebSocket `wss://ws-subscriptions-clob.polymarket.com/ws/market`, no auth for public data [doc]: [WS overview](https://docs.polymarket.com/market-data/websocket/overview). Trading is geoblocked for US persons [search], so its prices are **not actionable for a US user**: consensus input only, never a candidate.
   - *Polymarket US* (CFTC-regulated, open to US residents with KYC since May 2026 [search]): separate docs at [docs.polymarket.us](https://docs.polymarket.us/llms.txt) with Events/Markets/BBO/Book endpoints, Markets WebSocket, and a Sports API supporting `GET /v2/leagues/nfl/events` [doc]: [Sports API](https://docs.polymarket.us/api-reference/sports/overview). Whether market-data reads need auth: **TODO verify** on the Authentication page.

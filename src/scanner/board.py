@@ -69,9 +69,11 @@ def build_board(
     changed_at: dict[tuple, float] | None = None,
     slot_of=None,
     now: datetime | None = None,
+    stale_by_source: dict[str, float] | None = None,
 ) -> dict:
     now = now or datetime.now(timezone.utc)
     changed_at = changed_at or {}
+    stale_by_source = stale_by_source or {}
     upcoming = {e.event_id: e for e in events if e.start_time_utc > now}  # pregame only
 
     # (source, market group) -> {side: quote}, for each book's own no-vig price
@@ -97,7 +99,7 @@ def build_board(
                 "line": q.line,
                 "open": q.is_open,
                 "age": round(age, 1),
-                "stale": age > stale_seconds,
+                "stale": age > stale_by_source.get(source, stale_seconds),
                 "changed": changed_at.get(slot_of(q)) if slot_of else None,
                 "no_vig": probability_to_american(no_vig[side]) if side in no_vig else None,
                 "liquidity": q.liquidity,

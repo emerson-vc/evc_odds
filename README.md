@@ -3,8 +3,9 @@
 Personal, local +EV odds scanner. Design rules live in [CLAUDE.md](CLAUDE.md); per-source status in
 [docs/source_status.md](docs/source_status.md).
 
-**Current state:** two live sources for NFL pregame game lines + player props: FanDuel (PA, undocumented
-web endpoints) and Kalshi (official API). Side-by-side odds screen works. Consensus / +EV scan is next.
+**Current state:** five live sources for NFL pregame: FanDuel, DraftKings (undocumented web endpoints),
+BetMGM (via the passive browser extension in `browser_ext/betmgm_tap/`), Kalshi and Polymarket US (official
+APIs). Game lines everywhere; player props on FanDuel, DraftKings, BetMGM, Kalshi. Consensus / +EV scan is next.
 
 ## Setup
 

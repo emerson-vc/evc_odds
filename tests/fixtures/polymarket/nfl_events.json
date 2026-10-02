@@ -1,0 +1,2531 @@
+{
+ "type": "sport",
+ "typeTitle": "Games",
+ "section": "general",
+ "sectionTitle": "Sport",
+ "league": {
+  "name": "NFL",
+  "slug": "nfl",
+  "image": "https://static.polymarket.us/images/new-category-icons/Icon-Rugby.png",
+  "isOperational": true,
+  "id": 1,
+  "sportId": 3,
+  "tagId": 1,
+  "resolution": "https://www.nfl.com/",
+  "ordering": "away",
+  "activeSeriesId": 2,
+  "createdAt": "2026-03-05T18:30:42Z",
+  "abbreviation": "NFL"
+ },
+ "events": [
+  {
+   "id": "118973",
+   "chatChannel": {
+    "id": "nfl-ind-was-2026-10-04",
+    "type": "CHAT_CHANNEL_TYPE_MESSAGING",
+    "chatMemberCount": 0
+   },
+   "ticker": "nfl-ind-was-2026-10-04",
+   "slug": "nfl-ind-was-2026-10-04",
+   "title": "IND Colts vs. WAS Commanders",
+   "description": "IND Colts vs. WAS Commanders",
+   "startDate": "2026-10-04T13:30:00Z",
+   "endDate": "2026-10-04T23:59:00Z",
+   "active": true,
+   "closed": false,
+   "archived": false,
+   "category": "sports",
+   "createdAt": "2026-09-20T06:00:07Z",
+   "updatedAt": "2026-10-02T23:52:31Z",
+   "startTime": "2026-10-04T13:30:00Z",
+   "seriesSlug": "nfl-2025",
+   "period": "NS",
+   "markets": [
+    {
+     "id": "960578",
+     "question": "Who will win in the upcoming football event Indianapolis Colts vs Washington Commanders scheduled for October 4, 2026 at 1:30 PM UTC?",
+     "slug": "aec-nfl-ind-was-2026-10-04",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-20T06:00:07Z",
+     "description": "This market will settle to the winner of the Indianapolis Colts vs Washington Commanders NFL game scheduled for Oct 4, 2026. Overtime is included if played. If the game ends in a tie, the market will settle to $0.50. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from NFL.",
+     "active": true,
+     "marketType": "moneyline",
+     "closed": false,
+     "createdAt": "2026-09-20T06:00:07Z",
+     "updatedAt": "2026-10-02T23:52:31Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.0025,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_winner",
+     "marketSides": [
+      {
+       "id": "1920640",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "aec-nfl-ind-was-2026-10-04",
+       "createdAt": "2026-09-20T06:00:07Z",
+       "updatedAt": "2026-09-20T06:00:07Z",
+       "description": "Colts",
+       "price": "0.6525",
+       "marketId": 960578,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.6550",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "1920641",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "aec-nfl-ind-was-2026-10-04",
+       "createdAt": "2026-09-20T06:00:07Z",
+       "updatedAt": "2026-09-20T06:00:07Z",
+       "description": "Commanders",
+       "price": "0.6550",
+       "marketId": 960578,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.3475",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Colts\",\"Commanders\"]",
+     "outcomePrices": "[\"0.6525\",\"0.6550\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_MONEYLINE",
+     "hidden": false,
+     "tags": [],
+     "title": "IND Colts vs WAS Commanders",
+     "feeCoefficient": 0.0695,
+     "bestBidQuote": {
+      "value": "0.6525",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.6550",
+      "currency": "USD"
+     },
+     "titleShort": "IND vs WAS",
+     "ep3SyncedAt": "2026-10-01T11:43:50Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002322",
+     "question": "Will the Indianapolis Colts cover 3.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-pos-3pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:24Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +3.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:24Z",
+     "updatedAt": "2026-10-02T22:07:26Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": 3.5,
+     "marketSides": [
+      {
+       "id": "2004128",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-3pt5",
+       "createdAt": "2026-09-22T18:01:24Z",
+       "updatedAt": "2026-09-22T18:01:24Z",
+       "description": "+3.50",
+       "price": "0.7550",
+       "marketId": 1002322,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.7600",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004129",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-3pt5",
+       "createdAt": "2026-09-22T18:01:24Z",
+       "updatedAt": "2026-09-22T18:01:24Z",
+       "description": "-3.50",
+       "price": "0.7600",
+       "marketId": 1002322,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.245",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+3.50\",\"-3.50\"]",
+     "outcomePrices": "[\"0.7550\",\"0.7600\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 3.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.7550",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.7600",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -3.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002314",
+     "question": "Will the Indianapolis Colts cover -3.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-neg-3pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:19Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a -3.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:19Z",
+     "updatedAt": "2026-10-02T23:07:15Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": -3.5,
+     "marketSides": [
+      {
+       "id": "2004112",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-3pt5",
+       "createdAt": "2026-09-22T18:01:19Z",
+       "updatedAt": "2026-09-22T18:01:19Z",
+       "description": "-3.50",
+       "price": "0.5150",
+       "marketId": 1002314,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.5200",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004113",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-3pt5",
+       "createdAt": "2026-09-22T18:01:19Z",
+       "updatedAt": "2026-09-22T18:01:19Z",
+       "description": "+3.50",
+       "price": "0.5200",
+       "marketId": 1002314,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.485",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"-3.50\",\"+3.50\"]",
+     "outcomePrices": "[\"0.5150\",\"0.5200\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Indianapolis Colts wins by over 3.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.5150",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.5200",
+      "currency": "USD"
+     },
+     "titleShort": "IND -3.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002323",
+     "question": "Will the Indianapolis Colts cover 4.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-pos-4pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:25Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +4.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:25Z",
+     "updatedAt": "2026-10-02T22:07:26Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": 4.5,
+     "marketSides": [
+      {
+       "id": "2004130",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-4pt5",
+       "createdAt": "2026-09-22T18:01:25Z",
+       "updatedAt": "2026-09-22T18:01:25Z",
+       "description": "+4.50",
+       "price": "0.7800",
+       "marketId": 1002323,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.7850",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004131",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-4pt5",
+       "createdAt": "2026-09-22T18:01:25Z",
+       "updatedAt": "2026-09-22T18:01:25Z",
+       "description": "-4.50",
+       "price": "0.7850",
+       "marketId": 1002323,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.22",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+4.50\",\"-4.50\"]",
+     "outcomePrices": "[\"0.7800\",\"0.7850\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 4.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.7800",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.7850",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -4.5",
+     "ep3SyncedAt": "2026-10-01T11:48:08Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002321",
+     "question": "Will the Indianapolis Colts cover 2.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-pos-2pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:23Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +2.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:23Z",
+     "updatedAt": "2026-10-02T22:07:26Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": 2.5,
+     "marketSides": [
+      {
+       "id": "2004126",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-2pt5",
+       "createdAt": "2026-09-22T18:01:23Z",
+       "updatedAt": "2026-09-22T18:01:23Z",
+       "description": "+2.50",
+       "price": "0.6950",
+       "marketId": 1002321,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.7000",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004127",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-2pt5",
+       "createdAt": "2026-09-22T18:01:23Z",
+       "updatedAt": "2026-09-22T18:01:23Z",
+       "description": "-2.50",
+       "price": "0.7000",
+       "marketId": 1002321,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.305",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+2.50\",\"-2.50\"]",
+     "outcomePrices": "[\"0.6950\",\"0.7000\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 2.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.6950",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.7000",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -2.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002316",
+     "question": "Will the Indianapolis Colts cover -2.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-neg-2pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:20Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a -2.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:20Z",
+     "updatedAt": "2026-10-02T23:37:53Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": -2.5,
+     "marketSides": [
+      {
+       "id": "2004116",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-2pt5",
+       "createdAt": "2026-09-22T18:01:20Z",
+       "updatedAt": "2026-09-22T18:01:20Z",
+       "description": "-2.50",
+       "price": "0.6050",
+       "marketId": 1002316,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.6100",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004117",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-2pt5",
+       "createdAt": "2026-09-22T18:01:20Z",
+       "updatedAt": "2026-09-22T18:01:20Z",
+       "description": "+2.50",
+       "price": "0.6100",
+       "marketId": 1002316,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.395",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"-2.50\",\"+2.50\"]",
+     "outcomePrices": "[\"0.6050\",\"0.6100\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Indianapolis Colts wins by over 2.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.6050",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.6100",
+      "currency": "USD"
+     },
+     "titleShort": "IND -2.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002312",
+     "question": "Will the Indianapolis Colts cover -4.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-neg-4pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:18Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a -4.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:18Z",
+     "updatedAt": "2026-10-02T23:07:15Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": -4.5,
+     "marketSides": [
+      {
+       "id": "2004108",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-4pt5",
+       "createdAt": "2026-09-22T18:01:18Z",
+       "updatedAt": "2026-09-22T18:01:18Z",
+       "description": "-4.50",
+       "price": "0.4850",
+       "marketId": 1002312,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.4900",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004109",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-neg-4pt5",
+       "createdAt": "2026-09-22T18:01:18Z",
+       "updatedAt": "2026-09-22T18:01:18Z",
+       "description": "+4.50",
+       "price": "0.4900",
+       "marketId": 1002312,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.515",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"-4.50\",\"+4.50\"]",
+     "outcomePrices": "[\"0.4850\",\"0.4900\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Indianapolis Colts wins by over 4.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.4850",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.4900",
+      "currency": "USD"
+     },
+     "titleShort": "IND -4.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002324",
+     "question": "Will the Indianapolis Colts cover 5.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-pos-5pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:26Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +5.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:26Z",
+     "updatedAt": "2026-10-02T22:07:26Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": 5.5,
+     "marketSides": [
+      {
+       "id": "2004132",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-5pt5",
+       "createdAt": "2026-09-22T18:01:26Z",
+       "updatedAt": "2026-09-22T18:01:26Z",
+       "description": "+5.50",
+       "price": "0.7950",
+       "marketId": 1002324,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.8000",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004133",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-5pt5",
+       "createdAt": "2026-09-22T18:01:26Z",
+       "updatedAt": "2026-09-22T18:01:26Z",
+       "description": "-5.50",
+       "price": "0.8000",
+       "marketId": 1002324,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.205",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+5.50\",\"-5.50\"]",
+     "outcomePrices": "[\"0.7950\",\"0.8000\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 5.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.7950",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.8000",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -5.5",
+     "ep3SyncedAt": "2026-10-01T11:48:08Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1002320",
+     "question": "Will the Indianapolis Colts cover 1.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-pos-1pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:01:22Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +1.5 point spread in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:01:22Z",
+     "updatedAt": "2026-10-02T22:07:26Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_spread",
+     "line": 1.5,
+     "marketSides": [
+      {
+       "id": "2004124",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-1pt5",
+       "createdAt": "2026-09-22T18:01:22Z",
+       "updatedAt": "2026-09-22T18:01:22Z",
+       "description": "+1.50",
+       "price": "0.6800",
+       "marketId": 1002320,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.6850",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2004125",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-pos-1pt5",
+       "createdAt": "2026-09-22T18:01:22Z",
+       "updatedAt": "2026-09-22T18:01:22Z",
+       "description": "-1.50",
+       "price": "0.6850",
+       "marketId": 1002320,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.32",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+1.50\",\"-1.50\"]",
+     "outcomePrices": "[\"0.6800\",\"0.6850\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 1.5 points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.6800",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.6850",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -1.5",
+     "ep3SyncedAt": "2026-10-01T11:48:09Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003136",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 47.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-47pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:46Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 47.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:47Z",
+     "updatedAt": "2026-10-02T22:37:38Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 47.5,
+     "marketSides": [
+      {
+       "id": "2005756",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-47pt5",
+       "createdAt": "2026-09-22T18:12:47Z",
+       "updatedAt": "2026-09-22T18:12:47Z",
+       "description": "Over",
+       "price": "0.4900",
+       "marketId": 1003136,
+       "long": true,
+       "quote": {
+        "value": "0.4950",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005757",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-47pt5",
+       "createdAt": "2026-09-22T18:12:47Z",
+       "updatedAt": "2026-09-22T18:12:47Z",
+       "description": "Under",
+       "price": "0.4950",
+       "marketId": 1003136,
+       "long": false,
+       "quote": {
+        "value": "0.51",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.4900\",\"0.4950\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 47.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.4900",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.4950",
+      "currency": "USD"
+     },
+     "titleShort": "Over 47.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003135",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 46.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-46pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:45Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 46.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:45Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 46.5,
+     "marketSides": [
+      {
+       "id": "2005754",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-46pt5",
+       "createdAt": "2026-09-22T18:12:45Z",
+       "updatedAt": "2026-09-22T18:12:45Z",
+       "description": "Over",
+       "price": "0.5350",
+       "marketId": 1003135,
+       "long": true,
+       "quote": {
+        "value": "0.5400",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005755",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-46pt5",
+       "createdAt": "2026-09-22T18:12:45Z",
+       "updatedAt": "2026-09-22T18:12:45Z",
+       "description": "Under",
+       "price": "0.5400",
+       "marketId": 1003135,
+       "long": false,
+       "quote": {
+        "value": "0.465",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.5350\",\"0.5400\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 46.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.5350",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.5400",
+      "currency": "USD"
+     },
+     "titleShort": "Over 46.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003137",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 48.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-48pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:48Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 48.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:48Z",
+     "updatedAt": "2026-10-02T23:38:58Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 48.5,
+     "marketSides": [
+      {
+       "id": "2005758",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-48pt5",
+       "createdAt": "2026-09-22T18:12:48Z",
+       "updatedAt": "2026-09-22T18:12:48Z",
+       "description": "Over",
+       "price": "0.4550",
+       "marketId": 1003137,
+       "long": true,
+       "quote": {
+        "value": "0.4600",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005759",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-48pt5",
+       "createdAt": "2026-09-22T18:12:48Z",
+       "updatedAt": "2026-09-22T18:12:48Z",
+       "description": "Under",
+       "price": "0.4600",
+       "marketId": 1003137,
+       "long": false,
+       "quote": {
+        "value": "0.545",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.4550\",\"0.4600\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 48.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.4550",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.4600",
+      "currency": "USD"
+     },
+     "titleShort": "Over 48.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003134",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 45.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-45pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:44Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 45.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:44Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 45.5,
+     "marketSides": [
+      {
+       "id": "2005752",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-45pt5",
+       "createdAt": "2026-09-22T18:12:44Z",
+       "updatedAt": "2026-09-22T18:12:44Z",
+       "description": "Over",
+       "price": "0.5650",
+       "marketId": 1003134,
+       "long": true,
+       "quote": {
+        "value": "0.5700",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005753",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-45pt5",
+       "createdAt": "2026-09-22T18:12:44Z",
+       "updatedAt": "2026-09-22T18:12:44Z",
+       "description": "Under",
+       "price": "0.5700",
+       "marketId": 1003134,
+       "long": false,
+       "quote": {
+        "value": "0.435",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.5650\",\"0.5700\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 45.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.5650",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.5700",
+      "currency": "USD"
+     },
+     "titleShort": "Over 45.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003138",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 49.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-49pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:49Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 49.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:49Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 49.5,
+     "marketSides": [
+      {
+       "id": "2005760",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-49pt5",
+       "createdAt": "2026-09-22T18:12:49Z",
+       "updatedAt": "2026-09-22T18:12:49Z",
+       "description": "Over",
+       "price": "0.4300",
+       "marketId": 1003138,
+       "long": true,
+       "quote": {
+        "value": "0.4350",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005761",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-49pt5",
+       "createdAt": "2026-09-22T18:12:49Z",
+       "updatedAt": "2026-09-22T18:12:49Z",
+       "description": "Under",
+       "price": "0.4350",
+       "marketId": 1003138,
+       "long": false,
+       "quote": {
+        "value": "0.57",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.4300\",\"0.4350\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 49.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.4300",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.4350",
+      "currency": "USD"
+     },
+     "titleShort": "Over 49.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003133",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 44.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-total-44pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:12:43Z",
+     "description": "This market will settle to Yes if Indianapolis Colts and Washington Commanders combine for over 44.5 points in the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:12:43Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.005,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_full_game_total",
+     "line": 44.5,
+     "marketSides": [
+      {
+       "id": "2005750",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-44pt5",
+       "createdAt": "2026-09-22T18:12:43Z",
+       "updatedAt": "2026-09-22T18:12:43Z",
+       "description": "Over",
+       "price": "0.5900",
+       "marketId": 1003133,
+       "long": true,
+       "quote": {
+        "value": "0.5950",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2005751",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-total-44pt5",
+       "createdAt": "2026-09-22T18:12:43Z",
+       "updatedAt": "2026-09-22T18:12:43Z",
+       "description": "Under",
+       "price": "0.5950",
+       "marketId": 1003133,
+       "long": false,
+       "quote": {
+        "value": "0.41",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.5900\",\"0.5950\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Over 44.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.5900",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.5950",
+      "currency": "USD"
+     },
+     "titleShort": "Over 44.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:59Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1004115",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 13.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-tt-ind-13pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:37:39Z",
+     "description": "Team Point Total settles Over if Indianapolis Colts scores more than 13.5 points in the full game of the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended before this market is determined and is not resumed or rescheduled within two weeks of the originally scheduled date, it will be flagged for manual last-fair-market-price settlement. Outcome sourced from the NFL.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:37:39Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.01,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_points_full_game_total",
+     "line": 13.5,
+     "marketSides": [
+      {
+       "id": "2007714",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-tt-ind-13pt5",
+       "createdAt": "2026-09-22T18:37:39Z",
+       "updatedAt": "2026-09-22T18:37:39Z",
+       "description": "Over",
+       "price": "0.9100",
+       "marketId": 1004115,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#002C5F"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.9300",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2007715",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-tt-ind-13pt5",
+       "createdAt": "2026-09-22T18:37:39Z",
+       "updatedAt": "2026-09-22T18:37:39Z",
+       "description": "Under",
+       "price": "0.9300",
+       "marketId": 1004115,
+       "long": false,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#002C5F"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.09",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.9100\",\"0.9300\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Indianapolis Colts over 13.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.9100",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.9300",
+      "currency": "USD"
+     },
+     "metadata": {
+      "teamId": 61
+     },
+     "titleShort": "IND over 13.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:52Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1004132",
+     "question": "Will the total in IND Colts vs. WAS Commanders be more than 9.5?",
+     "slug": "tsc-nfl-ind-was-2026-10-04-tt-was-9pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:37:57Z",
+     "description": "Team Point Total settles Over if Washington Commanders scores more than 9.5 points in the full game of the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. Overtime is included if played. If the game is delayed, postponed, or suspended before this market is determined and is not resumed or rescheduled within two weeks of the originally scheduled date, it will be flagged for manual last-fair-market-price settlement. Outcome sourced from the NFL.",
+     "active": true,
+     "marketType": "totals",
+     "closed": false,
+     "createdAt": "2026-09-22T18:37:57Z",
+     "updatedAt": "2026-10-02T22:08:21Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.01,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_points_full_game_total",
+     "line": 9.5,
+     "marketSides": [
+      {
+       "id": "2007748",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-tt-was-9pt5",
+       "createdAt": "2026-09-22T18:37:57Z",
+       "updatedAt": "2026-09-22T18:37:57Z",
+       "description": "Over",
+       "price": "0.9200",
+       "marketId": 1004132,
+       "long": true,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#5A1414"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.9300",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2007749",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "tsc-nfl-ind-was-2026-10-04-tt-was-9pt5",
+       "createdAt": "2026-09-22T18:37:57Z",
+       "updatedAt": "2026-09-22T18:37:57Z",
+       "description": "Under",
+       "price": "0.9300",
+       "marketId": 1004132,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#5A1414"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.08",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"Over\",\"Under\"]",
+     "outcomePrices": "[\"0.9200\",\"0.9300\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_TOTAL",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders over 9.5 total points",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.9200",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.9300",
+      "currency": "USD"
+     },
+     "metadata": {
+      "teamId": 79
+     },
+     "titleShort": "WAS over 9.5 points",
+     "ep3SyncedAt": "2026-10-01T11:47:51Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    },
+    {
+     "id": "1003989",
+     "question": "Will the Indianapolis Colts cover 17.5 vs the Washington Commanders in IND Colts vs. WAS Commanders?",
+     "slug": "asc-nfl-ind-was-2026-10-04-1h-pos-17pt5",
+     "endDate": "2026-10-18T17:30:00Z",
+     "category": "sports",
+     "startDate": "2026-09-22T18:35:23Z",
+     "description": "This market will settle to Yes if Indianapolis Colts covers a +17.5 point spread in the first half of the Indianapolis Colts vs Washington Commanders professional football game scheduled for Oct 4, 2026. If the game is delayed, postponed, or suspended before the first half is completed and not rescheduled to a date within two weeks of the originally scheduled date, the market will settle to the last fair market price. Outcome sourced from the relevant governing body.",
+     "active": true,
+     "marketType": "spreads",
+     "closed": false,
+     "createdAt": "2026-09-22T18:35:23Z",
+     "updatedAt": "2026-10-01T11:47:58Z",
+     "archived": false,
+     "orderPriceMinTickSize": 0.01,
+     "gameStartTime": "2026-10-04T13:30:00Z",
+     "manualActivation": false,
+     "sportsMarketType": "football_team_first_half_spread",
+     "line": 17.5,
+     "marketSides": [
+      {
+       "id": "2007462",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-1h-pos-17pt5",
+       "createdAt": "2026-09-22T18:35:23Z",
+       "updatedAt": "2026-09-22T18:35:23Z",
+       "description": "+17.50",
+       "price": "0.9400",
+       "marketId": 1003989,
+       "long": true,
+       "teamId": 61,
+       "team": {
+        "id": 61,
+        "name": "Indianapolis Colts",
+        "abbreviation": "ind",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+        "alias": "Colts",
+        "safeName": "IND Colts",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#002C5F",
+        "providerId": 14,
+        "ordering": "away",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "displayAbbreviation": "IND",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "14"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+        "color": {
+         "light": "#002C5F",
+         "dark": "#386299"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.9900",
+        "currency": "USD"
+       },
+       "tradable": true
+      },
+      {
+       "id": "2007463",
+       "marketSideType": "MARKET_SIDE_TYPE_INSTRUMENT",
+       "identifier": "asc-nfl-ind-was-2026-10-04-1h-pos-17pt5",
+       "createdAt": "2026-09-22T18:35:23Z",
+       "updatedAt": "2026-09-22T18:35:23Z",
+       "description": "-17.50",
+       "price": "0.9900",
+       "marketId": 1003989,
+       "long": false,
+       "teamId": 79,
+       "team": {
+        "id": 79,
+        "name": "Washington Commanders",
+        "abbreviation": "was",
+        "league": "nfl",
+        "record": "1-2",
+        "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+        "alias": "Commanders",
+        "safeName": "WAS Commanders",
+        "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+        "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+        "colorPrimary": "#5A1414",
+        "providerId": 35,
+        "ordering": "home",
+        "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "displayAbbreviation": "WAS",
+        "conference": "",
+        "providerIds": [
+         {
+          "provider": "PROVIDER_SPORTSDATAIO",
+          "providerId": "35"
+         },
+         {
+          "provider": "PROVIDER_SPORTRADAR",
+          "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+         }
+        ],
+        "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+        "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+        "color": {
+         "light": "#5A1414",
+         "dark": "#934A44"
+        },
+        "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+       },
+       "quote": {
+        "value": "0.06",
+        "currency": "USD"
+       },
+       "tradable": true
+      }
+     ],
+     "outcomes": "[\"+17.50\",\"-17.50\"]",
+     "outcomePrices": "[\"0.9400\",\"0.9900\"]",
+     "ep3Status": "OPEN",
+     "status": "MARKET_STATUS_OPEN",
+     "assetPriceTerms": null,
+     "sportsMarketTypeV2": "SPORTS_MARKET_TYPE_SPREAD",
+     "hidden": false,
+     "tags": [],
+     "title": "Washington Commanders wins by over 17.5 points in 1st half",
+     "feeCoefficient": 0.0695,
+     "spreadTotalSuffix": "points",
+     "bestBidQuote": {
+      "value": "0.9400",
+      "currency": "USD"
+     },
+     "bestAskQuote": {
+      "value": "0.9900",
+      "currency": "USD"
+     },
+     "titleShort": "WAS -17.5 1H",
+     "ep3SyncedAt": "2026-10-01T11:47:58Z",
+     "minimumTradeQty": 0.01,
+     "comboEnabled": true
+    }
+   ],
+   "gameId": 19502,
+   "sportradarGameId": "2f4c7cf5-bb27-4d9f-bab2-adde30ace617",
+   "participants": [],
+   "hidden": false,
+   "tags": [
+    {
+     "id": "1",
+     "label": "NFL",
+     "slug": "nfl",
+     "createdAt": "2025-09-25T16:13:27Z",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "league": {
+      "id": 1,
+      "name": "NFL",
+      "sportId": 3,
+      "tagId": 1,
+      "image": "https://static.polymarket.us/images/new-category-icons/Icon-Rugby.png",
+      "resolution": "https://www.nfl.com/",
+      "ordering": "away",
+      "activeSeriesId": 2,
+      "isOperational": true,
+      "automaticResolution": false,
+      "createdAt": "2026-03-05T18:30:42Z",
+      "slug": "nfl",
+      "abbreviation": "NFL"
+     },
+     "parentId": 13,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "2",
+     "label": "Sports",
+     "slug": "sports",
+     "createdAt": "2025-09-25T16:13:27Z",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "3",
+     "label": "Games",
+     "slug": "games",
+     "createdAt": "2025-09-25T16:13:27Z",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "13",
+     "label": "Football",
+     "slug": "football",
+     "createdAt": "2026-03-05T18:30:42Z",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "sport": {
+      "id": 3,
+      "name": "Football",
+      "tagId": 13,
+      "createdAt": "2026-03-05T18:30:42Z",
+      "slug": "football"
+     },
+     "subtags": [
+      {
+       "id": "1",
+       "label": "NFL",
+       "slug": "nfl",
+       "createdAt": "2025-09-25T16:13:27Z",
+       "updatedAt": "2026-10-02T23:39:12Z",
+       "league": {
+        "id": 1,
+        "name": "NFL",
+        "sportId": 3,
+        "tagId": 1,
+        "image": "https://static.polymarket.us/images/new-category-icons/Icon-Rugby.png",
+        "resolution": "https://www.nfl.com/",
+        "ordering": "away",
+        "activeSeriesId": 2,
+        "isOperational": true,
+        "automaticResolution": false,
+        "createdAt": "2026-03-05T18:30:42Z",
+        "slug": "nfl",
+        "abbreviation": "NFL"
+       },
+       "parentId": 13,
+       "subtags": [],
+       "hub": null,
+       "featuredEventIds": []
+      }
+     ],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1419",
+     "label": "Week 4",
+     "slug": "week-4",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "tradable": false,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    },
+    {
+     "id": "1578",
+     "label": "Week 5",
+     "slug": "week-5",
+     "updatedAt": "2026-10-02T23:39:12Z",
+     "tradable": false,
+     "subtags": [],
+     "hub": null,
+     "featuredEventIds": []
+    }
+   ],
+   "teams": [
+    {
+     "id": 61,
+     "name": "Indianapolis Colts",
+     "abbreviation": "ind",
+     "league": "nfl",
+     "record": "1-2",
+     "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/IND.png",
+     "alias": "Colts",
+     "safeName": "IND Colts",
+     "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingRight_Icon%40160x160.png",
+     "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_IndianapolisColts_FacingLeft_Icon%40160x160.png",
+     "colorPrimary": "#002C5F",
+     "providerId": 14,
+     "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+     "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+     "displayAbbreviation": "IND",
+     "conference": "",
+     "providerIds": [
+      {
+       "provider": "PROVIDER_SPORTSDATAIO",
+       "providerId": "14"
+      },
+      {
+       "provider": "PROVIDER_SPORTRADAR",
+       "providerId": "82cf9565-6eb9-4f01-bdbd-5aa0d472fcd9"
+      }
+     ],
+     "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_L@320x320.png",
+     "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_IndianapolisColts_R@320x320.png",
+     "color": {
+      "light": "#002C5F",
+      "dark": "#386299"
+     },
+     "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+    },
+    {
+     "id": 79,
+     "name": "Washington Commanders",
+     "abbreviation": "was",
+     "league": "nfl",
+     "record": "1-2",
+     "logo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/NFL+Team+Logos/WSH.png",
+     "alias": "Commanders",
+     "safeName": "WAS Commanders",
+     "homeIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingRight_Icon%40160x160.png",
+     "awayIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/Polymarket_WashingtonCommanders_FacingLeft_Icon%40160x160.png",
+     "colorPrimary": "#5A1414",
+     "providerId": 35,
+     "longIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+     "shortIcon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+     "displayAbbreviation": "WAS",
+     "conference": "",
+     "providerIds": [
+      {
+       "provider": "PROVIDER_SPORTSDATAIO",
+       "providerId": "35"
+      },
+      {
+       "provider": "PROVIDER_SPORTRADAR",
+       "providerId": "22052ff7-c065-42ee-bc8f-c4691c50e624"
+      }
+     ],
+     "longIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_L@320x320.png",
+     "shortIconDark": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-logos/NFL/Polymarket_NFL_WashingtonCommanders_R@320x320.png",
+     "color": {
+      "light": "#5A1414",
+      "dark": "#934A44"
+     },
+     "imageDisplayType": "IMAGE_DISPLAY_TYPE_LOGO"
+    }
+   ],
+   "sortType": "price",
+   "marketGroups": [],
+   "streamProvider": "",
+   "streamRequiresAuth": false,
+   "featureAvailability": {
+    "lineups": true,
+    "timeline": false,
+    "stats": false
+   },
+   "combos": {
+    "enabled": true,
+    "numMarkets": 736,
+    "numSpreadsAndTotalsMarkets": 300
+   },
+   "marketCounts": {
+    "numMarkets": 755,
+    "numSpreadsAndTotalsMarkets": 300
+   }
+  }
+ ]
+}

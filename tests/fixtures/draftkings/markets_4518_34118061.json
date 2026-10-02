@@ -1,0 +1,305 @@
+{
+ "markets": [
+  {
+   "id": "1_84695494",
+   "eventId": "34118061",
+   "sportId": "3",
+   "leagueId": "88808",
+   "name": "Moneyline",
+   "subcategoryId": "4518",
+   "componentMapping": {
+    "primary": 210,
+    "fallback": 0
+   },
+   "marketType": {
+    "id": "1_0",
+    "betOfferTypeId": 2,
+    "name": "Moneyline"
+   },
+   "subscriptionKey": "markets-1164287336",
+   "sortOrder": 184695494,
+   "tags": [
+    "SGP",
+    "YourBetEligible",
+    "Cashout",
+    "FeaturedSubcategory",
+    "OSB",
+    "Default",
+    "PrimaryMarket"
+   ],
+   "blurbId": "8659f3ed-4ccd-4edb-94c7-3ed4452bb0ea",
+   "dynamicMetadata": {}
+  },
+  {
+   "id": "2_84695494",
+   "eventId": "34118061",
+   "sportId": "3",
+   "leagueId": "88808",
+   "name": "Spread",
+   "subcategoryId": "4518",
+   "componentMapping": {
+    "primary": 210,
+    "fallback": 0
+   },
+   "marketType": {
+    "id": "2_0",
+    "betOfferTypeId": 1,
+    "name": "Spread"
+   },
+   "subscriptionKey": "markets-1164287336",
+   "sortOrder": 284695494,
+   "tags": [
+    "SGP",
+    "YourBetEligible",
+    "Cashout",
+    "FeaturedSubcategory",
+    "OSB",
+    "Default",
+    "PrimaryMarket"
+   ],
+   "blurbId": "f5e4397e-37ac-4b7f-8642-438bcd5c47f2",
+   "dynamicMetadata": {}
+  },
+  {
+   "id": "3_84695494",
+   "eventId": "34118061",
+   "sportId": "3",
+   "leagueId": "88808",
+   "name": "Total",
+   "subcategoryId": "4518",
+   "componentMapping": {
+    "primary": 210,
+    "fallback": 0
+   },
+   "marketType": {
+    "id": "3_0",
+    "betOfferTypeId": 6,
+    "name": "Total"
+   },
+   "subscriptionKey": "markets-1164287336",
+   "sortOrder": 384695494,
+   "tags": [
+    "SGP",
+    "YourBetEligible",
+    "Cashout",
+    "FeaturedSubcategory",
+    "OSB",
+    "Default",
+    "PrimaryMarket"
+   ],
+   "blurbId": "cd516977-ee95-44ee-aafa-a9198749b300",
+   "dynamicMetadata": {}
+  }
+ ],
+ "selections": [
+  {
+   "id": "0ML84695494_3",
+   "marketId": "1_84695494",
+   "label": "IND Colts",
+   "displayOdds": {
+    "american": "\u2212192",
+    "decimal": "1.52",
+    "fractional": "25/48",
+    "percentage": "65%",
+    "multiplier": "1.52x"
+   },
+   "trueOdds": 1.52083334,
+   "outcomeType": "Away",
+   "participants": [
+    {
+     "id": "18372",
+     "name": "IND Colts",
+     "type": "Team",
+     "seoIdentifier": "Colts",
+     "venueRole": "Away",
+     "isNationalTeam": false,
+     "countryCode": "US",
+     "metadata": {
+      "sdid": "471"
+     }
+    }
+   ],
+   "sortOrder": 14983891,
+   "tags": [
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "65%",
+    "handlePercent": "60%"
+   }
+  },
+  {
+   "id": "0ML84695494_1",
+   "marketId": "1_84695494",
+   "label": "WAS Commanders",
+   "displayOdds": {
+    "american": "+160",
+    "decimal": "2.60",
+    "fractional": "8/5",
+    "percentage": "38%",
+    "multiplier": "2.60x"
+   },
+   "trueOdds": 2.6,
+   "outcomeType": "Home",
+   "participants": [
+    {
+     "id": "18480",
+     "name": "WAS Commanders",
+     "type": "Team",
+     "seoIdentifier": "Commanders",
+     "venueRole": "Home",
+     "isNationalTeam": false,
+     "countryCode": "US",
+     "metadata": {
+      "sdid": "929653"
+     }
+    }
+   ],
+   "sortOrder": 34983887,
+   "tags": [
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "35%",
+    "handlePercent": "40%"
+   }
+  },
+  {
+   "id": "0HC84695494N350_3",
+   "marketId": "2_84695494",
+   "label": "IND Colts",
+   "displayOdds": {
+    "american": "\u2212110",
+    "decimal": "1.90",
+    "fractional": "10/11",
+    "percentage": "52%",
+    "multiplier": "1.90x"
+   },
+   "trueOdds": 1.90909091,
+   "points": -3.5,
+   "outcomeType": "Away",
+   "participants": [
+    {
+     "id": "18372",
+     "name": "IND Colts",
+     "type": "Team",
+     "seoIdentifier": "Colts",
+     "venueRole": "Away",
+     "isNationalTeam": false,
+     "countryCode": "US",
+     "metadata": {
+      "sdid": "471"
+     }
+    }
+   ],
+   "sortOrder": -3501,
+   "tags": [
+    "MainPointLine",
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "52%",
+    "handlePercent": "60%"
+   }
+  },
+  {
+   "id": "0HC84695494P350_1",
+   "marketId": "2_84695494",
+   "label": "WAS Commanders",
+   "displayOdds": {
+    "american": "\u2212110",
+    "decimal": "1.90",
+    "fractional": "10/11",
+    "percentage": "52%",
+    "multiplier": "1.90x"
+   },
+   "trueOdds": 1.90909091,
+   "points": 3.5,
+   "outcomeType": "Home",
+   "participants": [
+    {
+     "id": "18480",
+     "name": "WAS Commanders",
+     "type": "Team",
+     "seoIdentifier": "Commanders",
+     "venueRole": "Home",
+     "isNationalTeam": false,
+     "countryCode": "US",
+     "metadata": {
+      "sdid": "929653"
+     }
+    }
+   ],
+   "sortOrder": -3499,
+   "tags": [
+    "MainPointLine",
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "48%",
+    "handlePercent": "40%"
+   }
+  },
+  {
+   "id": "0OU84695494O4850_1",
+   "marketId": "3_84695494",
+   "label": "Over",
+   "displayOdds": {
+    "american": "\u2212108",
+    "decimal": "1.92",
+    "fractional": "25/27",
+    "percentage": "51%",
+    "multiplier": "1.92x"
+   },
+   "trueOdds": 1.92592593,
+   "points": 48.5,
+   "outcomeType": "Over",
+   "sortOrder": 48500,
+   "tags": [
+    "MainPointLine",
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "54%",
+    "handlePercent": "88%"
+   }
+  },
+  {
+   "id": "0OU84695494U4850_3",
+   "marketId": "3_84695494",
+   "label": "Under",
+   "displayOdds": {
+    "american": "\u2212112",
+    "decimal": "1.89",
+    "fractional": "25/28",
+    "percentage": "52%",
+    "multiplier": "1.89x"
+   },
+   "trueOdds": 1.89285715,
+   "points": 48.5,
+   "outcomeType": "Under",
+   "sortOrder": 48502,
+   "tags": [
+    "MainPointLine",
+    "SGP",
+    "OSB"
+   ],
+   "metadata": {
+    "betPercent": "46%",
+    "handlePercent": "12%"
+   }
+  }
+ ],
+ "subscriptionPartials": {
+  "markets-1164287336": {
+   "entity": "markets",
+   "query": "$filter=eventId eq '34118061' AND clientMetadata/subCategoryId eq '4518' AND tags/all(t: t ne 'SportcastBetBuilder') and tags/any(t: t eq 'OSB')",
+   "locale": "en"
+  }
+ }
+}

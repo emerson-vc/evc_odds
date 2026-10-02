@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body { font: 13px -apple-system, BlinkMacSystemFont, sans-serif; width: 300px; margin: 12px; color: #14171c; }
+  h1 { font-size: 14px; margin: 0 0 8px; }
+  .row { display: flex; justify-content: space-between; align-items: center; margin: 6px 0; gap: 8px; }
+  .muted { color: #5d6573; font-size: 12px; }
+  .ok { color: #059669; } .bad { color: #dc2626; }
+  button { font: inherit; padding: 4px 10px; cursor: pointer; }
+  select, input { font: inherit; }
+  hr { border: 0; border-top: 1px solid #e2e5ea; margin: 10px 0; }
+  ul { margin: 4px 0; padding-left: 16px; } li { margin: 2px 0; }
+</style>
+</head>
+<body>
+  <h1>EVC BetMGM Tap</h1>
+  <div class="row"><span>Scanner</span><span id="server" class="muted">checking…</span></div>
+  <div class="row"><span>Tap active in a BetMGM tab</span><span id="hello" class="muted">—</span></div>
+  <div class="row"><span>Odds responses captured</span><span id="captured" class="muted">0</span></div>
+  <div class="row"><span>Sent to scanner</span><span id="last" class="muted">—</span></div>
+  <div id="err" class="bad muted"></div>
+  <hr>
+  <div class="row">
+    <label><input type="checkbox" id="auto"> Auto-reload marked tabs</label>
+    <select id="interval">
+      <option value="3">every 3 min</option><option value="5">every 5 min</option>
+      <option value="10">every 10 min</option><option value="15">every 15 min</option>
+    </select>
+  </div>
+  <div class="muted">Off by default. Reloads only tabs you mark, one at a time, never the tab you're viewing.</div>
+  <div class="row" style="margin-top:8px"><button id="mark">Mark this tab</button><button id="unmark">Unmark</button></div>
+  <div class="muted">Marked tabs:</div>
+  <ul id="tabs" class="muted"></ul>
+  <hr>
+  <div class="muted">Tip: the BetMGM <b>NFL page</b> gives every game's lines in one load; a <b>game page</b> adds that game's player props.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

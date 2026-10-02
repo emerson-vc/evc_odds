@@ -10,13 +10,14 @@ from src.models.quote import CanonicalQuote
 
 class MarketStore:
     def __init__(self):
-        # Keyed by (source, source_market_id, side): a spread market whose line moves from -3.5 to -3
-        # replaces its old quote instead of leaving a stale -3.5 entry behind.
+        # Keyed by (source, source_market_id, side, subject): a spread market whose line moves from -3.5 to -3
+        # replaces its old quote instead of leaving a stale -3.5 entry behind. `subject` matters for markets
+        # with one selection per player (anytime TD), which share a market id and side.
         self._latest: dict[tuple, CanonicalQuote] = {}
 
     @staticmethod
     def slot(q: CanonicalQuote) -> tuple:
-        return (q.source, q.source_market_id, q.side)
+        return (q.source, q.source_market_id, q.side, q.subject)
 
     def all(self) -> list[CanonicalQuote]:
         return list(self._latest.values())

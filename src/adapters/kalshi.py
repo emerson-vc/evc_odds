@@ -41,6 +41,7 @@ import httpx
 
 from src.adapters.base import AdapterHealth, RawEvent, RawQuote
 from src.models.market import MarketType, Period, Side
+from src.pricing.fees import effective_decimal as fee_adjusted
 from src.pricing.odds import decimal_to_american
 
 log = logging.getLogger(__name__)
@@ -86,7 +87,7 @@ def _f(x) -> float | None:
 
 
 def effective_decimal(ask: float, fee_coefficient: float) -> float:
-    return 1 / (ask + fee_coefficient * ask * (1 - ask))
+    return fee_adjusted(ask, fee_coefficient)
 
 
 class Pricer:
